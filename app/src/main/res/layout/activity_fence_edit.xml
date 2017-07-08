@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/title_layout_style">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:onClick="onBack"
+            android:paddingBottom="@dimen/btn_padding_default_y"
+            android:paddingLeft="@dimen/margin_horizontal_large"
+            android:paddingRight="@dimen/margin_horizontal_large"
+            android:paddingTop="@dimen/btn_padding_default_y"
+            android:scaleType="matrix"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:src="@drawable/icon_back"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/electronic_defence"
+            android:textColor="@color/textWhite"
+            android:textSize="@dimen/font_size_normal"/>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/edit_mapview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/layout_y_4"
+            android:layout_marginLeft="@dimen/layout_x_4"
+            android:layout_marginRight="@dimen/layout_x_4"
+            android:alpha="0.6"
+            android:background="@drawable/shape_map_location_ll"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/layout_y_5"
+            >
+
+            <ImageView
+                android:layout_width="@dimen/btn_img_height_smaller"
+                android:layout_height="@dimen/btn_img_height_smaller"
+                android:src="@drawable/location_red_user_point"/>
+
+            <TextView
+                android:id="@+id/edit_location_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_horizontal_normal"
+                android:textColor="@color/textDarkGray"
+                android:textSize="@dimen/font_size_smaller"/>
+            <!--android:text="@string/ele_edit_location_addr"-->
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/listBackColor"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/home_row_height"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/btn_padding_vertical_10"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_vertical_margin"
+            android:paddingTop="@dimen/btn_padding_vertical_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ele_edit_name"
+                android:textColor="@color/textDarkGray"
+                android:textSize="@dimen/font_size_normal"/>
+
+            <EditText
+                android:id="@+id/edit_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginLeft="@dimen/et_margin_horizontal_50"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="right"
+                android:hint="@string/ele_edit_et_hint"
+                android:maxLength="10"
+                android:maxLines="2"
+                android:paddingRight="@dimen/margin_horizontal_large"
+                android:textColor="@color/textDarkGray"
+                android:textSize="@dimen/font_size_normal"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/split_vertical_normal"
+            android:background="@color/listBackColor"/>
+
+        <RelativeLayout
+            android:id="@+id/areaRadius_rl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/home_row_height"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/margin_horizontal_large">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/ele_edit_area_radius"
+                android:textColor="@color/textDarkGray"
+                android:textSize="@dimen/font_size_normal"/>
+
+            <TextView
+                android:id="@+id/areaRadius"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="@dimen/btn_padding_default_x"
+                android:drawableRight="@drawable/fra"
+                android:gravity="right"
+                android:text="@string/ele_edit_radius_default"
+                android:textColor="@color/textHoloBlue"
+                android:textSize="@dimen/font_size_normal"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/split_vertical_normal"
+            android:background="@color/listBackColor"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/home_row_height"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/activity_vertical_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/ele_edit_remind_leaving"
+                android:textColor="@color/textDarkGray"
+                android:textSize="@dimen/font_size_normal"/>
+
+            <com.customview.switchbutton.SwitchButton
+                android:id="@+id/swithbutton1"
+                android:layout_width="@dimen/switchbtn_defence_width"
+                android:layout_height="@dimen/switchbtn_defence_height"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_horizontal_large"/>
+
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/split_vertical_normal"
+            android:background="@color/listBackColor"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/home_row_height"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/activity_vertical_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/ele_edit_remind_enter"
+                android:textColor="@color/textDarkGray"
+                android:textSize="@dimen/font_size_normal"/>
+
+            <com.customview.switchbutton.SwitchButton
+                android:id="@+id/swithbutton2"
+                android:layout_width="@dimen/switchbtn_defence_width"
+                android:layout_height="@dimen/switchbtn_defence_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_horizontal_large"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/edit_save"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_img_height_55"
+            android:layout_marginBottom="@dimen/btn_margin_vertical_10"
+            android:layout_marginLeft="@dimen/margin_horizontal_large"
+            android:layout_marginRight="@dimen/margin_horizontal_large"
+            android:layout_marginTop="@dimen/btn_margin_vertical_10"
+            android:background="@drawable/bg_fence_add_btn"
+            android:gravity="center"
+            android:text="@string/save"
+            android:textColor="@color/textWhite"
+            android:textSize="@dimen/font_size_normal"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

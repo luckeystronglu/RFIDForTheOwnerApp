@@ -1,0 +1,147 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!--<dimen name="titleLayoutHeight">56dp</dimen>-->
+    <dimen name="titleLayoutHeight">46dp</dimen>
+    <dimen name="textSizeBiggest">24sp</dimen>
+    <dimen name="text_size_bigger">22sp</dimen>
+    <dimen name="settingItemHeight">56dp</dimen>
+    <dimen name="settingItemTextPaddingLeft">56dp</dimen>
+
+    <!-- font size -->
+    <dimen name="font_size_nine">9.0sp</dimen>
+    <dimen name="font_size_smallest">10.0sp</dimen>
+    <dimen name="font_size_smaller">12.0sp</dimen>
+    <dimen name="font_size_small">14.0sp</dimen>
+    <dimen name="font_size_normal">16.0sp</dimen>
+    <dimen name="font_size_large">18.0sp</dimen>
+    <dimen name="font_size_larger">20.0sp</dimen>
+    <dimen name="font_size_largest">22.0sp</dimen>
+    <dimen name="font_size_huge">40.0sp</dimen>
+    <!-- margin -->
+    <dimen name="btn_margin_horizontal">@dimen/layout_x_30</dimen>
+    <dimen name="et_margin_horizontal_50">@dimen/layout_x_50</dimen>
+    <dimen name="btn_margin_horizontal_8">@dimen/layout_x_8</dimen>
+    <dimen name="btn_margin_horizontal_16">@dimen/layout_x_16</dimen>
+    <dimen name="btn_margin_horizontal_12">@dimen/layout_x_12</dimen>
+    <dimen name="btn_margin_horizontal_20">@dimen/layout_x_20</dimen>
+    <dimen name="btn_margin_horizontal_24">@dimen/layout_x_24</dimen>
+    <dimen name="btn_margin_vertical">@dimen/layout_y_15</dimen>
+    <dimen name="btn_margin_vertical_20">@dimen/layout_y_20</dimen>
+    <dimen name="btn_margin_vertical_large">@dimen/layout_y_30</dimen>
+    <dimen name="btn_margin_vertical_10">@dimen/layout_y_10</dimen>
+    <dimen name="btn_margin_vertical_8">@dimen/layout_y_8</dimen>
+    <dimen name="margin_vertical_16">@dimen/layout_y_16</dimen>
+    <dimen name="margin_vertical_32">@dimen/layout_y_32</dimen>
+    <!-- padding -->
+    <dimen name="padding_horizontal_small">@dimen/layout_x_2</dimen>
+    <dimen name="padding_horizontal_normal">@dimen/layout_x_5</dimen>
+    <dimen name="padding_horizontal_8">@dimen/layout_x_8</dimen>
+    <dimen name="padding_horizontal_large">@dimen/layout_x_10</dimen>
+    <dimen name="padding_horizontal_12">@dimen/layout_x_12</dimen>
+    <dimen name="padding_horizontal_20">@dimen/layout_x_20</dimen>
+    <dimen name="padding_horizontal_larger">@dimen/layout_x_16</dimen>
+    <dimen name="padding_horizontal_36">@dimen/layout_x_36</dimen>
+
+    <dimen name="textview_padding_default">@dimen/layout_x_5</dimen>
+    <dimen name="btn_padding_default_x">@dimen/layout_x_10</dimen>
+    <dimen name="btn_padding_default_y">@dimen/layout_y_5</dimen>
+    <dimen name="btn_padding_big_y">@dimen/layout_y_15</dimen>
+    <dimen name="btn_padding_vertical_10">@dimen/layout_y_10</dimen>
+    <dimen name="padding_vertical_20">@dimen/layout_y_20</dimen>
+    <!-- margin -->
+    <dimen name="margin_horizontal_small">@dimen/layout_x_2</dimen>
+    <dimen name="margin_vertical_small">@dimen/layout_y_2</dimen>
+    <dimen name="margin_horizontal_normal">@dimen/layout_x_5</dimen>
+    <dimen name="margin_horizontal_large">@dimen/layout_x_10</dimen>
+    <dimen name="margin_horizontal_15">@dimen/layout_x_15</dimen>
+    <dimen name="margin_horizontal_larger">@dimen/layout_x_20</dimen>
+    <dimen name="margin_horizontal_largest">@dimen/layout_x_30</dimen>
+
+    <!--   headbar height -->
+    <dimen name="btn_img_height_smaller">@dimen/layout_y_20</dimen>
+    <dimen name="btn_img_height">@dimen/layout_y_30</dimen>
+    <dimen name="headbar_height">@dimen/layout_y_50</dimen>
+    <dimen name="headbar_btn_height">@dimen/layout_y_30</dimen>
+    <dimen name="headbar_ll_width">@dimen/layout_x_70</dimen>
+
+    <dimen name="headbar_text_size">26.0sp</dimen>
+    <dimen name="headbar_btn_text_size">10.0sp</dimen>
+    <dimen name="headbar_tx_title_width">200.0dp</dimen>
+
+    <dimen name="header_minHeight">30.0dp</dimen>
+    <dimen name="header_minWidth">30.0dp</dimen>
+    <dimen name="header_padding">5.0dp</dimen>
+    <dimen name="header_margin">5.0dp</dimen>
+    <dimen name="header_margin_right">10.0dp</dimen>
+
+    <!--home menu-->
+    <dimen name="menu_image_width">@dimen/layout_x_50</dimen>
+    <dimen name="split_image_width">@dimen/layout_x_50</dimen>
+    <dimen name="split_image_height">@dimen/layout_x_25</dimen>
+    <dimen name="home_row_height">@dimen/layout_y_60</dimen>
+    <dimen name="home_row_height_large">@dimen/layout_y_80</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!--text common define-->
+    <dimen name="text_size_head_title">16sp</dimen>
+    <dimen name="text_size_btn">14sp</dimen>
+    <!--setting define-->
+    <dimen name="seting_margin_horizontal">12dp</dimen>
+    <dimen name="seting_margin_vertical">10dp</dimen>
+    <dimen name="btn_img_height_nomal">@dimen/layout_y_42</dimen>
+    <dimen name="btn_img_height_nomal2">@dimen/layout_y_46</dimen>
+    <dimen name="btn_img_height_large">@dimen/layout_y_50</dimen>
+    <dimen name="btn_img_height_55">@dimen/layout_y_55</dimen>
+    <dimen name="btn_img_height_small">@dimen/layout_y_35</dimen>
+    <dimen name="btn_img_width_small">@dimen/layout_x_28</dimen>
+    <dimen name="btn_img_width_smaller">@dimen/layout_x_25</dimen>
+    <!--split -->
+    <dimen name="split_vertical_normal">@dimen/layout_y_8</dimen>
+    <dimen name="split_vertical_large">@dimen/layout_y_16</dimen>
+    <!--updatepassword -->
+    <dimen name="update_pw_etwidth">@dimen/layout_x_250</dimen>
+    <dimen name="update_pw_et_distancemgi">@dimen/layout_x_8</dimen>
+    <dimen name="update_pw_et_padding">@dimen/layout_x_12</dimen>
+    <dimen name="update_pw_btn_distancemgi">@dimen/layout_y_80</dimen>
+    <dimen name="update_pw_header_height">@dimen/layout_y_60</dimen>
+    <!--defence-->
+    <dimen name="iv_defence_width">@dimen/layout_x_25</dimen>
+    <dimen name="iv_defence_height">@dimen/layout_y_25</dimen>
+    <dimen name="rl_defence_height">@dimen/layout_y_50</dimen>
+    <dimen name="switchbtn_defence_width">@dimen/layout_x_80</dimen>
+    <dimen name="switchbtn_defence_height">@dimen/layout_y_30</dimen>
+    <dimen name="view_defence_height">@dimen/layout_y_70</dimen>
+    <dimen name="view_defence_height_64">@dimen/layout_y_64</dimen>
+
+    <!--insurance-->
+    <dimen name="view_defence_height_220">@dimen/layout_y_220</dimen>
+    <dimen name="distance_height_70">@dimen/layout_y_70</dimen>
+    <dimen name="distance_height_50">@dimen/layout_y_50</dimen>
+    <dimen name="distance_height_20">@dimen/layout_y_20</dimen>
+    <dimen name="distance_width_20">@dimen/layout_x_20</dimen>
+    <dimen name="distance_width_16">@dimen/layout_x_16</dimen>
+    <dimen name="distance_width_12">@dimen/layout_x_12</dimen>
+
+    <!--Message-->
+    <dimen name="distance_height_6">@dimen/layout_y_6</dimen>
+    <dimen name="distance_height_10">@dimen/layout_y_10</dimen>
+    <dimen name="distance_height_40">@dimen/layout_y_40</dimen>
+    <dimen name="distance_height_30">@dimen/layout_y_30</dimen>
+    <dimen name="distance_height_35">@dimen/layout_y_35</dimen>
+    <dimen name="distance_height_45">@dimen/layout_y_45</dimen>
+    <dimen name="distance_height_60">@dimen/layout_y_60</dimen>
+    <dimen name="distance_height_65">@dimen/layout_y_65</dimen>
+    <dimen name="distance_height_80">@dimen/layout_y_80</dimen>
+    <dimen name="distance_height_90">@dimen/layout_y_90</dimen>
+    <dimen name="distance_height_100">@dimen/layout_y_100</dimen>
+    <dimen name="distance_height_155">@dimen/layout_y_155</dimen>
+    <dimen name="distance_height_2">@dimen/layout_y_2</dimen>
+    <dimen name="dialog_height_half">@dimen/layout_y_1</dimen>
+    <dimen name="distance_height_15">@dimen/layout_y_15</dimen>
+    <dimen name="divider_height_50">@dimen/layout_y_50</dimen>
+
+    <dimen name="shape_circle_corner_radius">@dimen/layout_x_8</dimen>
+
+</resources>

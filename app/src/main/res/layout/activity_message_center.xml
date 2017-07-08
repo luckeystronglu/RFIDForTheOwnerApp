@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/seting_background"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/title_layout_style" >
+
+        <ImageButton
+            android:id="@+id/message_center_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/btn_margin_horizontal_16"
+            android:background="@null"
+            android:onClick="onBack"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/textWhite"
+            android:text="@string/messageCenter"
+            android:textSize="@dimen/font_size_normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="@dimen/btn_margin_horizontal_16"
+            android:gravity="center"
+            android:clickable="true"
+            android:textColor="@color/textWhite"
+            android:text="@string/deleteAll"
+            android:textSize="@dimen/font_size_normal" />
+    </RelativeLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/msg_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/distance_height_40"
+        android:layout_gravity="center_vertical"
+        android:paddingBottom="@dimen/distance_height_2"
+        app:tabIndicatorColor="@color/actionsheet_blue"
+        app:tabIndicatorHeight="@dimen/distance_height_2"
+        app:tabSelectedTextColor="@color/actionsheet_blue"
+        android:background="@color/white"
+        app:tabTextAppearance="@style/text_travel_tab"
+        app:tabTextColor="@color/black" />
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/ll"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--android:paddingBottom="2dp"-->
+        <!--android:paddingTop="10dp">-->
+
+
+
+        <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+        <!--<com.qf.widget.TabView-->
+            <!--android:id="@+id/tabview"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+        <!--/>-->
+        <!--<View-->
+            <!--android:id="@+id/lit"-->
+            <!--android:layout_width="60dp"-->
+            <!--android:layout_marginLeft="40dp"-->
+            <!--android:layout_height="3dp"-->
+            <!--android:background="#0d2eec"-->
+
+        <!--/>-->
+
+    <!--</LinearLayout>-->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ccc"
+        android:layout_below="@+id/ll"
+    />
+
+
+</LinearLayout>

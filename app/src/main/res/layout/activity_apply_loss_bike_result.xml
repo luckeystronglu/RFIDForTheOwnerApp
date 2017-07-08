@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/contentGreyBg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/title_layout_style"
+        android:layout_alignParentTop="true">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_horizontal_normal"
+            android:background="@null"
+            android:onClick="onBack"
+            android:padding="6dp"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:scaleType="matrix"
+            android:src="@drawable/icon_back"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/loss_bike"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_normal"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_x_60"
+        android:layout_marginLeft="@dimen/layout_x_10"
+        android:layout_marginRight="@dimen/layout_x_10"
+        android:gravity="center_vertical"
+        android:text="请选择遗失日期"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/layout_x_12"
+        android:paddingRight="@dimen/layout_x_12">
+
+        <com.foxconn.rfid.theowner.view.LossBikeDateView
+            android:id="@+id/lbd_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_x_10"
+            android:layout_marginRight="@dimen/layout_x_10"
+            android:background="@color/white"
+            app:viewClickable="false"
+            />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_x_60"
+        android:layout_marginLeft="@dimen/layout_x_10"
+        android:layout_marginRight="@dimen/layout_x_10"
+        android:gravity="center_vertical"
+        android:text="请输入遗失地址"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_loss_address"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_x_60"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/layout_x_10"
+        android:paddingRight="@dimen/layout_x_10">
+
+        <ImageView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/layout_x_12"
+            android:layout_marginRight="@dimen/layout_x_12"
+            android:src="@drawable/ico_localtion"/>
+
+        <EditText
+            android:id="@+id/et_address"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/location"
+            android:background="@null"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:enabled="false"
+            android:gravity="center_vertical"
+            android:hint="地址"
+            android:textColor="@color/actionsheet_gray"
+            android:textColorHint="@color/textGray"
+            android:textSize="@dimen/font_size_small"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_error"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="@dimen/layout_y_20">
+
+        <ImageView
+            android:id="@+id/iv_alert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/alert"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_alert"
+            android:layout_alignTop="@id/iv_alert"
+            android:layout_marginLeft="@dimen/layout_x_10"
+            android:layout_toRightOf="@id/iv_alert"
+            android:gravity="center"
+            android:text="你的车辆丢失申请未通过"
+            android:textColor="#FD7651"
+            android:textSize="@dimen/font_size_normal"/>
+
+        <TextView
+            android:id="@+id/tv_reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_alert"
+            android:textColor="@color/actionsheet_gray"
+            android:text="请修改车辆丢失的时间和地点"
+            android:layout_marginTop="@dimen/layout_y_10"
+            android:textSize="@dimen/font_size_normal"/>
+    </RelativeLayout>
+
+</LinearLayout>

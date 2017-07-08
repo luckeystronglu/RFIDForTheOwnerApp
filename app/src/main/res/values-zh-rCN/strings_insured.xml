@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <string name="insuredPerson">insuredPerson </string>
+    <string name="insuredStartTime">Start Time</string>
+    <string name="insuredTermOfValidity">Term Of Validity </string>
+</resources>

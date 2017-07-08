@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LossBikeDateView">
+        <attr name="viewClickable" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="InputView">
+        <attr name="InputViewTitle" format="reference|string"/>
+        <attr name="InputViewEditable" format="boolean"/>
+        <attr name="InputViewContent" format="reference|string"/>
+        <attr name="InputViewHint" format="reference|string"/>
+        <attr name="InputViewMaxLength" format="reference|integer"/>
+        <attr name="InputViewMarkVisible">
+            <enum name="visible" value="0"/>
+            <enum name="invisible" value="1"/>
+            <enum name="gone" value="2"/>
+        </attr>
+        <attr name="InputViewInputType">
+            <enum name="textPassword" value="0"/>
+            <enum name="numberDecimal" value="1"/>
+            <enum name="number" value="2"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="SelectView">
+        <attr name="SelectViewIndicatorImg" format="reference"/>
+        <attr name="SelectViewTitle" format="reference|string"/>
+        <attr name="SelectViewHint" format="reference|string"/>
+        <attr name="SelectViewMarkVisible">
+            <enum name="visible" value="0"/>
+            <enum name="invisible" value="1"/>
+            <enum name="gone" value="2"/>
+        </attr>
+    </declare-styleable>
+    <attr name="LossBikeDateView">aa</attr>
+</resources>

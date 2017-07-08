@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/textWhite"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titleLayoutHeight"
+        android:background="@color/titleBg">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:background="@null"
+            android:onClick="onBack"
+            android:padding="6dp"
+            android:scaleType="matrix"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/carSafePrep"
+            android:textColor="@color/textWhite"
+            android:textSize="@dimen/text_size_bigger" />
+    </RelativeLayout>
+    
+    <com.baidu.mapapi.map.MapView
+                    android:id="@+id/mapview"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:clickable="true" />
+    <ListView 
+        android:id="@+id/safe_area_list"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <Button 
+        android:id="@+id/add_safe_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="添加安全区域"/>
+    
+
+</LinearLayout>

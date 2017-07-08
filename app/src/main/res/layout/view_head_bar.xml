@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/pw_update_color" >
+
+    <LinearLayout
+        android:id="@+id/header_left_ll"
+        android:layout_width="@dimen/headbar_ll_width"
+        android:layout_height="@dimen/layout_y_50"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:descendantFocusability="blocksDescendants"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/head_imgbtn_back"
+            android:layout_width="@dimen/headbar_btn_height"
+            android:layout_height="@dimen/headbar_btn_height"
+            android:background="@drawable/headbar_back"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:clickable="false"
+            android:focusable="false" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/head_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:text="修改密码"
+        android:textSize="@dimen/font_size_largest" />
+
+    <LinearLayout
+        android:id="@+id/header_right_ll"
+        android:layout_width="@dimen/headbar_ll_width"
+        android:layout_height="@dimen/layout_y_50"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:descendantFocusability="blocksDescendants"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/head_imgbtn_save"
+            android:layout_width="@dimen/headbar_btn_height"
+            android:layout_height="@dimen/headbar_btn_height"
+            android:layout_gravity="center"
+            android:background="@drawable/cloud"
+            android:clickable="false"
+            android:focusable="false"
+            android:visibility="gone" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/header_right2_ll"
+        android:layout_width="@dimen/headbar_ll_width"
+        android:layout_height="@dimen/layout_y_50"
+        android:layout_toLeftOf="@id/header_right_ll"
+        android:layout_centerVertical="true"
+        android:descendantFocusability="blocksDescendants"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+        <ImageButton
+            android:id="@+id/head_imgbtn_list"
+            android:layout_width="@dimen/headbar_btn_height"
+            android:layout_height="@dimen/headbar_btn_height"
+            android:layout_gravity="center"
+            android:background="@drawable/cloud"
+            android:clickable="false"
+            android:focusable="false"
+            android:visibility="visible" />
+    </LinearLayout>
+</RelativeLayout>

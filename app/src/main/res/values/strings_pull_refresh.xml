@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="pull_down_refresh">Pull down to refresh...</string>
+    <string name="release_refresh">Release to refresh...</string>
+    <string name="refreshing">Refreshing</string>
+    <string name="pull_up_load_more">Pull up to load more...</string>
+    <string name="release_load_more">Release to load more...</string>
+    <string name="last_page">No more</string>
+    <string name="loading_more">Loading...</string>
+
+   </resources>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/me_bg_gray"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/title_layout_style">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:onClick="onBack"
+            android:padding="6dp"
+            android:paddingLeft="@dimen/margin_horizontal_large"
+            android:paddingRight="@dimen/margin_horizontal_large"
+            android:scaleType="matrix"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:src="@drawable/icon_back" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/myInsurance"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_normal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_y_220"
+        android:background="@drawable/ico_top_bg">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/background_insurance" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_y_60"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/layout_x_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/basic_insurance_info"
+            android:textColor="@color/title_color_blue"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/left"
+            android:textSize="@dimen/font_size_normal" />
+
+        <TextView
+            android:id="@+id/tv_buy_insurance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="购买保险"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:background="@drawable/shape_tv_buyinsu"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/layout_x_20"
+            />
+    </RelativeLayout>
+
+    <!-- <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/left" />-->
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/layout_x_14"
+        android:paddingRight="@dimen/layout_x_14"
+        android:scrollbars="none"
+        >
+
+        <com.foxconn.rfid.theowner.view.SVListView
+            android:id="@+id/lv_insurance_info"
+            android:layout_width="match_parent"
+            android:paddingTop="@dimen/layout_x_10"
+            android:paddingBottom="@dimen/layout_x_20"
+            android:layout_height="match_parent"
+            android:divider="@color/me_bg_gray"
+            android:dividerHeight="@dimen/layout_x_10"
+            />
+        <!-- android:divider="#00000000"
+            android:dividerHeight="0dp"-->
+
+
+    </ScrollView>
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/layout_y_50"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:paddingLeft="@dimen/margin_horizontal_largest"-->
+        <!--android:paddingRight="@dimen/margin_horizontal_largest">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="3"-->
+            <!--android:text="@string/name"-->
+            <!--android:textSize="@dimen/font_size_normal" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_name"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="5"-->
+            <!--android:textColor="@color/blue"-->
+            <!--android:textSize="@dimen/font_size_normal" />-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/layout_y_50"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:paddingLeft="@dimen/margin_horizontal_largest"-->
+        <!--android:paddingRight="@dimen/margin_horizontal_largest">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="3"-->
+            <!--android:text="@string/idCardNo"-->
+            <!--android:textSize="@dimen/font_size_normal" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_idCardNo"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="5"-->
+            <!--android:textColor="@color/blue"-->
+            <!--android:textSize="@dimen/font_size_normal" />-->
+    <!--</LinearLayout>-->
+
+</LinearLayout>

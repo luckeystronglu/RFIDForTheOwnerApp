@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <!--android:background="@drawable/shape_dialog"-->
+
+    <RelativeLayout
+        android:background="@drawable/shape_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/delete_reminder"
+            android:textSize="@dimen/font_size_larger"
+            android:paddingLeft="@dimen/padding_horizontal_12"
+            android:paddingRight="@dimen/padding_horizontal_12"
+            android:paddingTop="@dimen/padding_vertical_20"
+            android:paddingBottom="@dimen/padding_vertical_20"
+            android:layout_marginLeft="@dimen/margin_horizontal_15"
+            android:textColor="@color/white"
+            />
+        <ImageView
+            android:id="@+id/delete"
+            android:src="@mipmap/x"
+            android:paddingRight="@dimen/padding_horizontal_20"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/dialog_delete_one_selected"
+            android:layout_marginLeft="@dimen/margin_horizontal_large"
+            android:paddingLeft="@dimen/padding_horizontal_12"
+            android:paddingRight="@dimen/padding_horizontal_12"
+            android:paddingTop="@dimen/padding_vertical_20"
+            android:paddingBottom="@dimen/padding_vertical_20"
+            android:textSize="@dimen/font_size_normal"
+            android:textColor="@color/textDarkGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/message_dialog_textcolor"/>
+    <LinearLayout
+        android:divider="@drawable/diliver_work_rg"
+        android:showDividers="middle"
+        android:background="@drawable/dialog_msg_btn_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- 取消 -->
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/padding_horizontal_12"
+            android:paddingRight="@dimen/padding_horizontal_12"
+            android:paddingTop="@dimen/distance_height_15"
+            android:paddingBottom="@dimen/distance_height_15"
+            android:textSize="@dimen/font_size_normal"
+            android:clickable="true"
+            android:gravity="center"
+            android:textColor="@color/textDarkGray"
+            android:text="@string/dialog_cancel"
+            />
+
+        <!-- 确定 -->
+        <TextView
+            android:id="@+id/tv_sure"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:clickable="true"
+            android:textColor="@color/message_dialog_sure"
+            android:textSize="@dimen/font_size_normal"
+            android:text="@string/dialog_sure"
+            />
+    </LinearLayout>
+
+</LinearLayout>

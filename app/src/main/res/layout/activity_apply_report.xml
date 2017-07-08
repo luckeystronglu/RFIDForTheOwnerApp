@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/seting_background"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/title_layout_style"
+        android:id="@+id/rl_setting"
+        android:layout_alignParentTop="true" >
+
+        <ImageButton
+            android:id="@+id/report_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:background="@null"
+            android:onClick="onBack"
+            android:padding="6dp"
+            android:scaleType="matrix"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/textWhite"
+            android:text="@string/applyreport"
+            android:textSize="@dimen/font_size_normal" />
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:id="@+id/view1"
+        android:layout_marginTop="150dp"
+        android:layout_width="match_parent"
+        android:background="@color/textGray"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/view1"
+        android:background="@color/textWhite"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/background_transparent"
+            android:hint="请选择遗失日期"
+            android:gravity="center"
+            android:textSize="@dimen/font_size_normal"
+            android:layout_gravity="center" />
+    </LinearLayout>
+    <View
+        android:id="@+id/view2"
+        android:layout_below="@id/date"
+        android:layout_width="match_parent"
+        android:background="@color/textGray"
+        android:layout_height="1dp"/>
+    <View
+        android:id="@+id/view3"
+        android:layout_marginTop="230dp"
+        android:layout_width="match_parent"
+        android:background="@color/textGray"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/view3"
+        android:background="@color/textWhite"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/background_transparent"
+            android:hint="请输入遗失地址"
+            android:gravity="center"
+            android:textSize="@dimen/font_size_normal"
+            android:layout_gravity="center" />
+    </LinearLayout>
+    <View
+        android:id="@+id/view4"
+        android:layout_below="@id/address"
+        android:layout_width="match_parent"
+        android:background="@color/textGray"
+        android:layout_height="1dp"/>
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="保存"
+        android:textSize="@dimen/font_size_larger"
+        android:textColor="@color/textWhite"
+        android:background="@drawable/bg_fence_add_btn"/>
+
+</RelativeLayout>
+    <FrameLayout
+        android:id="@+id/calendardate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp" />
+</RelativeLayout>

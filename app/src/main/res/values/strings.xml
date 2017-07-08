@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LeCheHui</string>
+    <string name="activity_main_title">My Car</string>
+    <string name="carInfo">Car Info</string>
+    <string name="carNo">Car No</string>
+
+    <string name="historicalTrack">Historical Track</string>
+    <string name="myInsurance">My Insurance</string>
+    <string name="theLossOfClaim">The loss of claim</string>
+    <string name="dataLoading">Data Loading</string>
+    <string name="custom">Custom</string>
+    <string name="thetitlesave">Input the title</string>
+    <string name="btn_txt_confirm">Confirm</string>
+    <string name="tv_confirm">Confirm</string>
+    <string name="btn_txt_cancel">Cancel</string>
+    <string name="toast_msg_call_webservice_fail">Call webservice failed</string>
+    <string name="network_error">Network error</string>
+    <string name="decrease"><![CDATA[<]]></string>
+    <string name="increase"><![CDATA[>]]></string>
+    <string name="logoinfo">LeCheHui Owner</string>
+
+    <!--版本更新 -->
+    <string name="last_version">Latest Version:</string>
+    <string name="version_check">Version check</string>
+    <string name="home_dlg_download_update_title">Update App</string>
+    <string name="home_dlg_download_update">Update</string>
+    <string name="home_dlg_download_cansel">cancel</string>
+    <string name="home_dlg_download_title">Version Check</string>
+    <string name="lastest_version">It is the latest version</string>
+    <string name="get_version_failed">Get version failed</string>
+    <string name="home_dlg_download_update_fail">Download failed</string>
+
+    <string name="basic_insurance_info">basic insurance info</string>
+    <string name="name">name</string>
+    <string name="idCardNo">idCardNumber</string>
+    <string name="insuranceName">insuranceName</string>
+    <string name="insuranceNum">Insurance Num</string>
+    <string name="startTime">startTime</string>
+    <string name="endTime">endTime</string>
+    <string name="money">money</string>
+    <string name="loss_bike">loss_bike</string>
+
+    <string name="exit_system">exit system</string>
+
+    <!--Home-->
+    <string name="my_insurance">My Insurance</string>
+    <string name="no_insurance">No Insurance</string>
+    <string name="insurance_normal">Insurance</string>
+    <string name="insurance_expire">Insurance expire</string>
+
+
+    <string name="apply_lost">Applied lost</string>
+    <string name="use_normal">Use normal</string>
+    <string name="apply_payout">Apply payout</string>
+    <string name="applied_payout">Applied payout</string>
+    <string name="apply_cash">Apply Cash</string>
+
+    <string name="dispose_lost">Lost Bike Dispose</string>
+    <string name="apply_bikelost">Apply bike lost</string>
+    <string name="check_bikelost">Check bike lost</string>
+    <string name="finding_lost_bike">Finding lost bike</string>
+    <string name="check_payout">Check payout</string>
+    <string name="dispose_getcash">Get cash dispose</string>
+    <string name="lostbike_dispose_over">DisPose over</string>
+
+    <string name="applied_cash">Applied Cash</string>
+    <string name="bike_lost">Bike lost</string>
+    <string name="bike_stolen">Bike stolen</string>
+    <string name="remain_find_time">Remain find time</string>
+    <string name="enable_apply_payout"> could apply payout</string>
+
+    <string name="payout_apply_have_send">Applied payout</string>
+    <string name="get_data_error">Get data failed</string>
+    <string name="this_is_last_page">It is the last page</string>
+    <string name="delete_success">Delete successfully</string>
+    <string name="no_need_delete">No message to delete</string>
+    <string name="most_have_defence_num">A bike can only have three defences </string>
+    <string name="look_up">Look up</string>
+    <string name="ignore">Ignore</string>
+
+
+</resources>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">乐车汇-车主版</string>
+    <string name="activity_main_title">我的车辆</string>
+    <string name="carInfo">车辆详情</string>
+    <string name="carNo">车牌号码</string>
+
+    <string name="historicalTrack">历史轨迹</string>
+    <string name="myInsurance">我的保险</string>
+    <string name="theLossOfClaim">挂失索赔</string>
+    <string name="dataLoading">数据加载</string>
+    <string name="custom">自定义</string>
+    <string name="thetitlesave">输入需要保存的标题</string>
+    <string name="btn_txt_confirm">"确定"</string>
+    <string name="tv_confirm">"确认"</string>
+    <string name="btn_txt_cancel">"取消"</string>
+    <string name="toast_msg_call_webservice_fail">"系统服务器异常,请稍后再试"</string>
+    <string name="network_error">"网络请求错误"</string>
+    <string name="decrease"><![CDATA[<]]></string>
+    <string name="increase"><![CDATA[>]]></string>
+    <string name="logoinfo">"乐车汇-车主版"</string>
+
+    <!--版本更新-->
+    <string name="last_version">Latest Version:</string>
+    <string name="version_check">软件更新</string>
+    <string name="home_dlg_download_update_title">应用更新</string>
+    <string name="home_dlg_download_update">更新</string>
+    <string name="home_dlg_download_cansel">取消</string>
+    <string name="home_dlg_download_title">版本更新</string>
+    <string name="lastest_version">当前已是最新版本</string>
+    <string name="get_version_failed">获取版本失败</string>
+    <string name="home_dlg_download_update_fail">下载失败</string>
+
+    <string name="basic_insurance_info">基本信息</string>
+    <string name="name">姓    名</string>
+    <string name="idCardNo">身份证号</string>
+    <string name="insuranceName">险种类型</string>
+    <string name="insuranceNum">保单号</string>
+    <string name="startTime">起始时间</string>
+    <string name="endTime">结束时间</string>
+    <string name="money">金额</string>
+    <!--Home-->
+    <string name="my_insurance">我的保险</string>
+    <string name="no_insurance">未投保</string>
+    <string name="insurance_normal">已投保</string>
+    <string name="insurance_expire">已过期,请续保</string>
+
+
+    <string name="apply_lost">已申请丢失</string>
+    <string name="use_normal">正常使用</string>
+
+    <string name="dispose_lost">报失处理</string>
+    <string name="apply_payout">索赔申请</string>
+    <string name="apply_cash">理赔通知</string>
+    <string name="apply_bikelost">报失申请</string>
+    <string name="check_bikelost">报失审核</string>
+    <string name="finding_lost_bike">车辆寻找</string>
+    <string name="check_payout">理赔审核</string>
+    <string name="dispose_getcash">提现审核</string>
+    <string name="lostbike_dispose_over">结束</string>
+
+
+    <string name="applied_payout">已申请索赔</string>
+    <string name="applied_cash">已申请提现</string>
+    <string name="bike_lost">车辆丢失</string>
+    <string name="bike_stolen">车辆被盗</string>
+    <string name="remain_find_time">剩余查找时间:</string>
+    <string name="enable_apply_payout">后可索赔</string>
+    <string name="loss_bike">申请挂失</string>
+    <string name="payout_apply_have_send">索赔申请已提交</string>
+    <string name="get_data_error">获取数据错误</string>
+    <string name="this_is_last_page">已经是最后一页了！</string>
+    <string name="delete_success">删除成功</string>
+    <string name="no_need_delete">暂无消息,无需删除</string>
+    <string name="most_have_defence_num">您已达到最大电子围栏数量</string>
+    <string name="exit_system">再按一次退出程序</string>
+    <string name="look_up">查看</string>
+    <string name="ignore">忽略</string>
+
+</resources>

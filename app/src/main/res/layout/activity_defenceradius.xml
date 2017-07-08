@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <RelativeLayout
+        style="@style/title_layout_style"
+        android:id="@+id/rl_setting">
+
+        <ImageButton
+            android:id="@+id/radius_imgbtn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:background="@null"
+            android:onClick="onBack"
+            android:padding="6dp"
+            android:scaleType="matrix"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/textWhite"
+            android:text="@string/coverRadius"
+            android:textSize="@dimen/font_size_large" />
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/defence_radius_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+</LinearLayout>

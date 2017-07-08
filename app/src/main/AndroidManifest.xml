@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.foxconn.rfid.theowner"
+    android:versionCode="1"
+    android:versionName="1.0.0.3">
+
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE"/><!--获取apk大小-->
+
+    <!-- 百度推送使用权限 -->
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" >
+    </uses-permission>
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 允许应用读取低级别的系统日志文件 -->
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE"/>
+
+<!--baidu push permission start-->
+    <!-- 适配Android N系统必需的ContentProvider写权限声明，写权限包含应用包名-->
+    <uses-permission android:name="baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.yzh.appowner" />
+    <permission
+        android:name="baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.yzh.appowner"
+        android:protectionLevel="normal">
+    </permission>
+    <!--baidu push permission end-->
+    <application
+        android:name="com.foxconn.rfid.theowner.base.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon_app"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="WICmfwpSL1OyDcgmRjAq5REgz933DOFf" />
+        <activity
+            android:name=".activity.main.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden">
+
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+
+        </activity>
+        <activity
+            android:name=".activity.LoadingActivity"
+            android:theme="@style/activityTheme"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".activity.SettingActivity"
+            android:label="@string/activity_setting_title"
+            android:screenOrientation="portrait"
+            android:theme="@style/activityTheme"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".activity.setting.PersonalInfoActivity"
+            android:label="@string/personalInformation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activityTheme"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".activity.setting.UpdatePasswordActivity"
+            android:label="@string/updatePassword"
+            android:screenOrientation="portrait"
+            android:theme="@style/activityTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.setting.VersionUpdateActivity"
+            android:label="@string/versionUpdate"
+            android:theme="@style/activityTheme"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".activity.main.VehicleInfoActivity"
+            android:label="@string/carInfo"
+            android:screenOrientation="portrait"
+            android:theme="@style/activityTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.main.HistoricalTrackActivity"
+            android:label="@string/carInfo"
+            android:screenOrientation="portrait"
+            android:theme="@style/activityTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.main.MyInsuranceActivity"
+            android:label="@string/carInfo"
+            android:screenOrientation="portrait"
+            android:theme="@style/activityTheme"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="com.foxconn.rfid.theowner.activity.main.defence.EleFenceInfoActivity"
+            android:label="@string/carInfo"
+            android:screenOrientation="portrait"
+            android:theme="@style/activityTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.foxconn.rfid.theowner.activity.main.defence.EleFenceListActivity"
+            android:label="@string/carInfo"
+            android:screenOrientation="portrait"
+            android:theme="@style/activityTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.main.defence.EleFenceEditActivity"
+            android:label="@string/carInfo"
+            android:screenOrientation="portrait"
+            android:theme="@style/activityTheme"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity android:name=".activity.main.defence.DefenceRadiusActivity"/><!-- 选择电子围栏半径 -->
+        <activity android:name=".activity.main.defence.AddEleFenceActivity"/><!-- 增加电子围栏 -->
+        <activity android:name=".activity.insurance.ApplyLossBikeActivity" android:screenOrientation="portrait"/> <!-- 申请报失 -->
+        <activity android:name=".activity.message.MessageApplyLossBikeActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.insurance.ApplyPayoutActivity" android:screenOrientation="portrait"/><!-- 申请索赔 -->
+        <!-- 申请提现(旧) -->
+        <activity android:name=".activity.message.ActivityMessageCenter"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            /><!-- 消息中心 -->
+        <!--<activity android:name=".activity.message.ActivityMessageApplyPayout"/>&lt;!&ndash; 申请索赔（消息） &ndash;&gt;-->
+        <activity android:name=".activity.message.MessageApplyInsuPayoutActivity" android:screenOrientation="portrait"/><!-- 申请索赔（消息） -->
+        <activity android:name=".activity.message.MessageApplyCashActivity" android:screenOrientation="portrait"/><!-- 申请提现（消息） -->
+        <!-- 我的信息 -->
+        <activity android:name=".activity.main.defence.LostAddrMapActivity" android:screenOrientation="portrait"/><!--丢失地址选择 -->
+        <activity android:name=".activity.main.defence.BikeLostDisposeActivity" android:screenOrientation="portrait"/><!--报失处理 -->
+        <activity android:name=".activity.main.MainNewActivity" android:screenOrientation="portrait" android:launchMode="singleTask"/><!-- 20170502新版MainActivity -->
+        <activity android:name=".activity.main.defence.BuyInsuranceActivity" android:windowSoftInputMode="stateUnchanged" android:screenOrientation="portrait"/><!-- 购买保险的Activity -->
+        <activity android:name=".activity.message.ApplyGetMoneyActivity" android:screenOrientation="portrait"/><!--申请提现-->
+
+        <service android:name="com.baidu.location.f"
+                 android:enabled="true"
+                 android:process=":remote">
+
+        </service>
+        <!-- baidu push  start-->
+
+        <!-- 此处Receiver名字修改为当前包名路径 -->
+        <receiver android:name="com.foxconn.rfid.theowner.activity.MyPushMessageReceiver">
+            <intent-filter>
+                <!-- 接收push消息 -->
+                <action android:name="com.baidu.android.pushservice.action.MESSAGE" />
+                <!-- 接收bind、setTags等method的返回结果-->
+                <action android:name="com.baidu.android.pushservice.action.RECEIVE" />
+                <!-- 接收通知点击事件，和通知自定义内容 -->
+                <action android:name="com.baidu.android.pushservice.action.notification.CLICK" />
+            </intent-filter>
+        </receiver>
+        <!-- 用于接收系统消息以保证PushService正常运行 -->
+        <receiver android:name="com.baidu.android.pushservice.PushServiceReceiver"
+            android:process=":bdservice_v1" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.baidu.android.pushservice.action.notification.SHOW" />
+                <action android:name="com.baidu.android.pushservice.action.media.CLICK" />
+                <!-- 以下四项为可选的action声明，可大大提高service存活率和消息到达速度 -->
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+        <!-- Push服务接收客户端发送的各种请求-->
+        <receiver android:name="com.baidu.android.pushservice.RegistrationReceiver"
+            android:process=":bdservice_v1" >
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.METHOD" />
+                <action android:name="com.baidu.android.pushservice.action.BIND_SYNC" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.baidu.android.pushservice.PushService" android:exported="true"
+            android:process=":bdservice_v1" >
+            <intent-filter >
+                <action android:name="com.baidu.android.pushservice.action.PUSH_SERVICE" />
+            </intent-filter>
+        </service>
+
+        <!-- 4.4版本新增的CommandService声明，提升小米和魅族手机上的实际推送到达率 -->
+        <service android:name="com.baidu.android.pushservice.CommandService"
+            android:exported="true" />
+
+        <!-- 适配Android N系统必需的ContentProvider声明，写权限包含应用包名-->
+        <provider
+            android:name="com.baidu.android.pushservice.PushInfoProvider"
+            android:authorities="com.yzh.appowner.bdpush"
+            android:writePermission="baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.yzh.appowner"
+            android:protectionLevel = "signature"
+            android:exported="true" />
+        <!-- baidu push  end-->
+    </application>
+
+</manifest>

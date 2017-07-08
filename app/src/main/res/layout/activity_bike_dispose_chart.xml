@@ -1,0 +1,668 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/title_layout_style">
+
+        <ImageView
+            android:id="@+id/lost_dispose_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/margin_horizontal_large"
+            android:background="@null"
+            android:onClick="onBack"
+            android:padding="6dp"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:scaleType="matrix"
+            android:src="@drawable/icon_back"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="报失处理流程"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_normal"/>
+
+        <ImageView
+            android:id="@+id/iv_dispose_refresh"
+            android:layout_width="@dimen/btn_img_height_small"
+            android:layout_height="@dimen/btn_img_height_small"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ico_sx"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/btn_margin_vertical_20"
+                android:layout_marginLeft="@dimen/layout_x_10"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <!--报失申请-->
+                <LinearLayout
+                    android:id="@+id/ll_apply_lost"
+                    android:layout_width="match_parent"
+                    android:clickable="false"
+                    android:layout_height="@dimen/distance_height_40"
+                    android:background="@drawable/shape_corner_gray"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+
+                        android:text="@string/apply_bikelost" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/distance_height_40"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/arrow3" />
+                </LinearLayout>
+
+
+                <!--调查取证-->
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/ll_survey_evidence"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="@dimen/distance_height_40"-->
+                    <!--android:background="@drawable/shape_corner_gray"-->
+                    <!--android:gravity="center">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textColor="@color/white"-->
+                        <!--android:text="调查取证" />-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="@dimen/distance_height_40"-->
+                    <!--android:gravity="center_horizontal">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:src="@drawable/arrow3" />-->
+                <!--</LinearLayout>-->
+
+
+                <!--报失审核-->
+                <LinearLayout
+                    android:id="@+id/ll_check_lost"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/distance_height_40"
+                    android:background="@drawable/shape_corner_gray"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="@string/check_bikelost" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/distance_height_40"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/arrow3" />
+                </LinearLayout>
+
+                <!--车辆寻找-->
+                <LinearLayout
+                    android:id="@+id/ll_finding_lost"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/distance_height_40"
+                    android:background="@drawable/shape_corner_gray"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="@string/finding_lost_bike" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/distance_height_40"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/arrow3" />
+                </LinearLayout>
+
+
+                <!--是否找到-->
+                <LinearLayout
+                    android:id="@+id/ll_found_ornot"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/distance_height_65"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_found_ornot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/found_gray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/distance_height_155"
+                    android:layout_marginTop="@dimen/layout_y_10"
+                    android:layout_marginBottom="@dimen/layout_y_10"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                         android:layout_marginLeft="@dimen/btn_margin_horizontal_24"
+                        android:src="@drawable/arrow1"
+                        android:id="@+id/imageView" />
+                </LinearLayout>
+
+
+
+                <!--索赔申请-->
+                <LinearLayout
+                    android:id="@+id/ll_apply_payout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/distance_height_40"
+                    android:clickable="false"
+                    android:background="@drawable/shape_corner_gray"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="@string/apply_payout" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/distance_height_45"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/arrow3" />
+                </LinearLayout>
+
+                <!--索赔审核-->
+                <LinearLayout
+                    android:id="@+id/ll_check_payout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/distance_height_40"
+                    android:background="@drawable/shape_corner_gray"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="@string/check_payout" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/distance_height_50"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/arrow3" />
+                </LinearLayout>
+
+                <!--提现申请-->
+                <LinearLayout
+                    android:id="@+id/ll_getmoney_payout"
+                    android:layout_width="match_parent"
+                    android:clickable="false"
+                    android:layout_height="@dimen/distance_height_40"
+                    android:background="@drawable/shape_corner_gray"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="@string/apply_cash"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_height_50"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/arrow3" />
+                </LinearLayout>
+
+                <!--&lt;!&ndash;提现审核&ndash;&gt;-->
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/ll_getmoney_dispose"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="@dimen/distance_height_40"-->
+                    <!--android:background="@drawable/shape_corner_gray"-->
+                    <!--android:gravity="center">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textColor="@color/white"-->
+                        <!--android:text="@string/dispose_getcash" />-->
+
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="@dimen/divider_height_50"-->
+                    <!--android:gravity="center_horizontal">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:src="@drawable/arrow3" />-->
+                <!--</LinearLayout>-->
+
+
+                <!--提现通知-->
+                <LinearLayout
+                    android:id="@+id/ll_getmoney_notify"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/distance_height_40"
+                    android:background="@drawable/shape_corner_gray"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="理赔消息"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/distance_height_40"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/arrow3" />
+                </LinearLayout>
+
+                <!--结束-->
+                <LinearLayout
+                    android:id="@+id/ll_diapose_over"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/distance_height_40"
+                    android:layout_marginBottom="@dimen/layout_y_30"
+                    android:background="@drawable/shape_corner_gray"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="@string/lostbike_dispose_over" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:layout_marginLeft="@dimen/layout_x_10"
+                android:layout_marginRight="@dimen/layout_x_10"
+                android:orientation="vertical">
+
+                <!--报失申请-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/distance_height_40"
+                    android:background="@drawable/text2"
+                    android:layout_marginTop="@dimen/btn_margin_vertical_20"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textDarkGray"
+                        android:textSize="@dimen/font_size_smallest"
+                        android:text='车辆丢失后，车主请点击这里报失'/>
+                </LinearLayout>
+
+
+                <!--调查取证-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="@dimen/distance_height_40"-->
+                    <!--android:background="@drawable/text2"-->
+                    <!--android:layout_marginTop="@dimen/distance_height_40"-->
+                    <!--android:gravity="center">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textColor="@color/textDarkGray"-->
+                        <!--android:textSize="@dimen/font_size_smallest"-->
+                        <!--android:text='公安对车辆报失信息进行调查取证'/>-->
+                <!--</LinearLayout>-->
+
+                <!--报失审核-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/distance_height_40"
+                    android:background="@drawable/text2"
+                    android:layout_marginTop="@dimen/distance_height_40"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textDarkGray"
+                        android:textSize="@dimen/font_size_smallest"
+                        android:text='民警立案审核中…'/>
+                </LinearLayout>
+
+                <!--车辆寻找-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/distance_height_40"
+                    android:background="@drawable/text2"
+                    android:layout_marginTop="@dimen/distance_height_40"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textDarkGray"
+                        android:textSize="@dimen/font_size_smallest"
+                        android:text='民警努力破案中…'/>
+                </LinearLayout>
+
+                <!--车辆寻找-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/distance_height_50"
+                    android:background="@drawable/text2"
+                    android:layout_marginTop="@dimen/divider_height_50"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textDarkGray"
+                        android:textSize="@dimen/font_size_smallest"
+                        android:text='60天后,判断车辆是否找到,\n如未找到，车辆状态变为丢失.'/>
+                </LinearLayout>
+
+
+                <!--车辆找回与否-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/distance_height_40"
+                    android:layout_marginTop="@dimen/btn_margin_vertical_20"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/ll_bike_found"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/shape_corner_gray"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="联系车主" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/layout_x_20"
+                            android:layout_marginRight="@dimen/layout_x_20"
+                            android:src="@drawable/arrow2" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_bike_return"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/shape_corner_gray"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="交还车主"
+                            android:id="@+id/textView6" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <!--车辆找回与否-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/distance_height_90"
+                    android:layout_marginTop="@dimen/btn_margin_vertical_10"
+                    android:gravity="center"
+                    android:layout_gravity="top"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/text1"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/textDarkGray"
+                            android:textSize="@dimen/font_size_smallest"
+                            android:text='公安在平台中点\"找回\"按钮,系统会联系车主带证件到某地领取'
+                            android:id="@+id/textView7" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/layout_x_20"
+                            android:layout_marginRight="@dimen/layout_x_20"
+                            android:visibility="invisible"
+                            android:src="@drawable/arrow2" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="@dimen/distance_height_60"
+                        android:background="@drawable/text1"
+                        android:layout_gravity="top"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/textDarkGray"
+                            android:textSize="@dimen/font_size_smallest"
+                            android:text='公安与车主办理车辆交还手续'/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <!--索赔申请-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/distance_height_50"
+                    android:background="@drawable/text2"
+                    android:layout_marginTop="@dimen/distance_height_15"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textDarkGray"
+                        android:textSize="@dimen/font_size_smallest"
+                        android:text='60天后,车主未收到车辆找回信息,车主在车主APP上进行索赔申请.'/>
+                </LinearLayout>
+
+                <!--索赔申请-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/distance_height_50"
+                    android:background="@drawable/text2"
+                    android:layout_marginTop="@dimen/distance_height_40"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textDarkGray"
+                        android:textSize="@dimen/font_size_smallest"
+                        android:text='客服在平台中办理理赔审核,并按照相关规定填写理赔金额.'/>
+                </LinearLayout>
+
+                <!--提现申请-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/distance_height_50"
+                    android:background="@drawable/text2"
+                    android:layout_marginTop="@dimen/distance_height_35"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textDarkGray"
+                        android:textSize="@dimen/font_size_smallest"
+                        android:text='车主通过APP办理提现申请.\n可以申请到运输公司提现或银行转账.'/>
+                </LinearLayout>
+
+                <!--提现通知-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/distance_height_50"
+                    android:background="@drawable/text2"
+                    android:layout_marginTop="@dimen/distance_height_40"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textDarkGray"
+                        android:textSize="@dimen/font_size_smallest"
+                        android:text='如果客户提现金,车主需携带证件到某地领取现金,如是转账,运维公司账务及时办理.'/>
+                </LinearLayout>
+
+                <!--&lt;!&ndash;提现审核&ndash;&gt;-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="@dimen/distance_height_65"-->
+                    <!--android:background="@drawable/text2"-->
+                    <!--android:layout_marginTop="@dimen/distance_height_30"-->
+                    <!--android:gravity="center">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textColor="@color/textDarkGray"-->
+                        <!--android:textSize="@dimen/font_size_smallest"-->
+                        <!--android:text='客服在平台上审核车主的提现申请.如果客户是提现金,-->
+                        <!--平台自动下发要求车主带证件到某地领取现金的通知,如是转账,运维公司账务及时办理.'/>-->
+                <!--</LinearLayout>-->
+
+                <!--android:text='客服在平台上审核车主的提现申请.如果客户是提现金,
+                        平台自动下发要求车主带证件到某地领取现金的通知,如是转账,运维公司账务及时办理.'-->
+
+                <!--&lt;!&ndash;提现通知&ndash;&gt;-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="@dimen/distance_height_50"-->
+                    <!--android:background="@drawable/text2"-->
+                    <!--android:layout_marginTop="@dimen/distance_height_35"-->
+                    <!--android:gravity="center">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textColor="@color/textDarkGray"-->
+                        <!--android:textSize="@dimen/font_size_smallest"-->
+                        <!--android:text='车主按通知要求办理提现.如是要求转账,如果车主开通短信提醒,就会收到银行短信.'/>-->
+                <!--</LinearLayout>-->
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

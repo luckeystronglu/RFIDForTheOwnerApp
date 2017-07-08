@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:background="@color/message_item_view_background"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/split_vertical_normal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/padding_horizontal_large"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_horizontal_normal"
+        >
+            <ImageView
+                android:id="@+id/iv_safety_marks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/padding_horizontal_normal"
+                android:src="@drawable/ico_news"/>
+            <TextView
+                android:id="@+id/tv_safety_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_horizontal_large"
+                android:layout_toRightOf="@+id/iv_safety_marks"
+                android:textColor="@color/message_item_msgname_tv"
+                android:textSize="@dimen/font_size_normal"
+            />
+            <!--android:text="安全区域"-->
+            <TextView
+                android:id="@+id/tv_safety_date_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_horizontal_large"
+                android:text="@string/msg_lv_item_time"
+                android:textColor="@color/message_item_time_tv"
+                android:textSize="@dimen/font_size_small"
+            />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_safety_addr"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/padding_horizontal_large"
+                android:paddingRight="@dimen/padding_horizontal_large"
+                android:paddingBottom="@dimen/padding_horizontal_large"
+                android:lineSpacingMultiplier="1.3"
+                android:layout_gravity="center_vertical"
+                android:text="@string/msg_lv_item_content"
+                android:textColor="@color/message_item_safety_addr"
+                android:textSize="@dimen/font_size_small"/>
+
+            <ImageView
+                android:id="@+id/msg_safety_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:paddingRight="@dimen/btn_margin_horizontal_20"
+                android:paddingLeft="@dimen/btn_margin_horizontal_20"
+                android:src="@drawable/ico_delete"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

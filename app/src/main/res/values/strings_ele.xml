@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="ele_fence">Electronic Fence</string>
+    <string name="ele_add_fence">Add EleFence</string>
+    <string name="save">Save</string>
+    <string name="ele_edit_area_radius">Are Radius</string>
+    <string name="ele_edit_remind_leaving">Remind Leaving</string>
+    <string name="ele_edit_remind_enter">Remind Enter</string>
+    <string name="ele_edit_name">Name</string>
+    <string name="ele_edit_et_hint">输入需要保存的标题</string>
+    <string name="ele_edit_location_addr">广东省深圳市宝安区五和大道</string>
+    <string name="edit">编辑</string>
+    <string name="add_safe_area">Add Safety Area</string>
+    <string name="meter">Meter</string>
+    <string name="ele_edit_radius_default">500Meter</string>
+    <string name="apply_insu_payout_remarks">Remarks</string>
+    <string name="confirm_payout_apply">Confirm the Apply</string>
+    <string name="edit_payout_message">修改消息</string>
+</resources>

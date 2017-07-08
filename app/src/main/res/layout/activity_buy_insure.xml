@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/title_layout_style">
+
+        <ImageView
+            android:id="@+id/buy_insurance_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/margin_horizontal_large"
+            android:background="@null"
+            android:onClick="onBack"
+            android:padding="6dp"
+            android:scaleType="matrix"
+            android:src="@drawable/icon_back"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="提交投保信息"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_normal"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_y_50"
+        android:background="#F1F1F1"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/layout_y_10">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ico_div" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="投保"
+            android:textColor="@color/actionsheet_blue"
+            android:textSize="@dimen/font_size_large" />
+    </LinearLayout>
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="#f1f1f1"-->
+        <!--android:orientation="vertical"-->
+        <!--&gt;-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/layout_x_12">
+
+
+            <com.foxconn.rfid.theowner.view.widgets.SelectView
+                android:id="@+id/select_insure_class"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/layout_y_8"
+                app:SelectViewHint="请选择"
+                app:SelectViewIndicatorImg="@drawable/bg_arrow"
+                app:SelectViewTitle="保险类型" />
+
+            <com.foxconn.rfid.theowner.view.widgets.InputView
+                android:id="@+id/input_insure_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_y_8"
+                android:layout_marginTop="@dimen/layout_y_8"
+                app:InputViewHint="请输入保险单号"
+                app:InputViewMarkVisible="gone"
+                app:InputViewTitle="保险单号"/>
+
+            <com.foxconn.rfid.theowner.view.widgets.InputView
+                android:id="@+id/input_insure_money"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_y_8"
+                android:layout_marginTop="@dimen/layout_y_8"
+                app:InputViewEditable="false"
+                app:InputViewHint="0.00"
+                app:InputViewInputType="numberDecimal"
+                app:InputViewMarkVisible="gone"
+                app:InputViewTitle="保险金额" />
+
+            <com.foxconn.rfid.theowner.view.widgets.InputView
+                android:id="@+id/input_insure_money_max"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_y_8"
+                android:layout_marginTop="@dimen/layout_y_8"
+                app:InputViewEditable="false"
+                app:InputViewHint="0.00"
+                app:InputViewInputType="numberDecimal"
+                app:InputViewMarkVisible="gone"
+                app:InputViewTitle="最高保额" />
+
+
+            <com.foxconn.rfid.theowner.view.widgets.InputView
+                android:id="@+id/input_insure_company"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_y_8"
+                android:layout_marginTop="@dimen/layout_y_8"
+                app:InputViewEditable="false"
+                app:InputViewHint="请输入承保公司"
+                app:InputViewMarkVisible="gone"
+                app:InputViewTitle="承保公司" />
+
+            <com.foxconn.rfid.theowner.view.widgets.InputView
+                android:id="@+id/input_insure_month_valid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_y_8"
+                android:layout_marginTop="@dimen/layout_y_8"
+                app:InputViewEditable="false"
+                app:InputViewHint="0"
+                app:InputViewInputType="number"
+                app:InputViewMarkVisible="gone"
+                app:InputViewTitle="有效月数" />
+
+
+            <com.foxconn.rfid.theowner.view.widgets.SelectView
+                android:id="@+id/effective_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/layout_y_8"
+                app:SelectViewHint="请选择"
+                app:SelectViewIndicatorImg="@drawable/bg_arrow"
+                app:SelectViewTitle="生效日期" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_y_8"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/mark"
+                    android:layout_width="@dimen/layout_x_100"
+                    android:layout_height="wrap_content"
+                    android:text="保险描述"
+                    android:textColor="@color/textBlack"
+                    android:textSize="@dimen/font_size_small" />
+
+                <EditText
+                    android:id="@+id/et_remark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/mark"
+                    android:background="@color/white"
+                    android:gravity="top"
+                    android:hint="描述内容"
+                    android:minHeight="@dimen/layout_y_100"
+                    android:textColor="@color/textDarkGray"
+                    android:textColorHint="@color/textGray"
+                    android:textSize="@dimen/font_size_small" />
+                <!--android:background="@drawable/bg_tv_gray_corner"-->
+
+            </RelativeLayout>
+            <!--</LinearLayout>-->
+            <!--<Button-->
+                <!--style="@style/btn_base"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="@dimen/layout_x_14"-->
+                <!--android:background="@drawable/bg_btn_base"-->
+                <!--android:onClick="buyInsuranceSubmit"-->
+                <!--android:text="提交" />-->
+
+            <Button
+                android:id="@+id/btn_buy_insurance"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_img_height_55"
+                android:layout_marginLeft="@dimen/margin_horizontal_large"
+                android:layout_marginRight="@dimen/margin_horizontal_large"
+                android:layout_marginTop="@dimen/distance_height_20"
+                android:background="@drawable/bg_fence_add_btn"
+                android:gravity="center"
+                android:text="提交"
+                android:textColor="@color/white"
+                android:onClick="buyInsuranceSubmit"
+                android:textSize="@dimen/font_size_large"/>
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

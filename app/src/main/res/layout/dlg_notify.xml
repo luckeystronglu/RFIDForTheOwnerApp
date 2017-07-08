@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="323dp"
+  android:layout_height="221dp"
+  android:layout_gravity="center">
+		
+	<ImageView 
+		android:id="@+id/dlg_iv_icon"
+		android:layout_width="25dp"
+		android:layout_height="25dp"
+		android:layout_marginTop="30dp"
+		android:layout_marginLeft="40dp"
+		android:contentDescription=""/>
+		
+	<TextView 
+		android:id="@+id/dlg_tv_title"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="@color/white"
+		android:layout_toRightOf="@id/dlg_iv_icon"
+		android:textSize="18sp"
+		android:layout_alignTop="@id/dlg_iv_icon"
+		android:layout_marginLeft="10dp"
+		/>
+		
+	<TextView 
+		android:id="@+id/dlg_tv_msg"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="@color/gray"
+		android:layout_below="@id/dlg_iv_icon"
+		android:textSize="16sp"
+		android:layout_marginTop="10dp"
+		android:layout_marginLeft="40dp"
+		android:layout_marginRight="40dp"
+		android:maxLines="4"
+		/>
+	
+	<Button 
+		android:id="@+id/dlg_btn_confirm"
+		android:layout_width="80dp"
+		android:layout_height="30dp"
+		android:background="@drawable/dlg_selector_btn"
+		android:text="@string/dlg_btn_confirm"
+		android:textColor="@color/black"
+		android:textSize="14sp"
+		android:layout_below="@id/dlg_iv_icon"
+		android:layout_marginTop="102dp"
+		android:layout_centerHorizontal="true"
+		/>
+	
+	<Button 
+		android:id="@+id/dlg_btn_cancel"
+		android:layout_width="80dp"
+		android:layout_height="30dp"
+		android:background="@drawable/dlg_selector_btn"
+		android:text="@string/dlg_btn_confirm"
+		android:textColor="@color/black"
+		android:textSize="14sp"
+		android:layout_below="@id/dlg_iv_icon"
+		android:layout_marginTop="102dp"
+		android:layout_centerHorizontal="true"
+		/>
+    
+</RelativeLayout>

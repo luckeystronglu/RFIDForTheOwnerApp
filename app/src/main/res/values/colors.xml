@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#2C3743</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="bg">#03cbbf</color>
+    <color name="titleBg">#2C3743</color>
+    <color name="contentBg">#ffffff</color>
+    <color name="contentGreyBg">#e6e7e8</color>
+    <color name="grayLine">#d1d1d1</color>
+    <color name="textGray">#cecfd0</color>
+    <color name="personalinfo_textGray">#909090</color>
+    <color name="textHoloBlue">#64a6f0</color>
+    <color name="textDarkBlue">#0d6bd3</color>
+    <color name="textDarkGray">#909090</color>
+    <color name="textBlack">#000000</color>
+    <color name="textWhite">#ffffff</color>
+    <color name="thumbColor">#66aaaaaa</color>
+    <color name="backColor">#EFEFF4</color>
+    <color name="listBackColor">#efeef4</color>
+
+    <color name="mainline">#EBEBF1</color>
+    <color name="bright_foreground">#80FFFFFF</color>
+
+    <color name="round_corner_progress_bar_background_default">#5f5f5f</color>
+    <color name="round_corner_progress_bar_progress_default">#7f7f7f</color>
+    <color name="round_corner_progress_bar_secondary_progress_default">@android:color/transparent</color>
+
+    <color name="text">#ffffffff</color>
+    <color name="pw_update_color">#2f3744</color>
+    <color name="colorPage">#EDEDED</color>
+    <color name="transparent">#00000000</color>
+    <color name="BinaryTransparent">#aeffffff</color>
+    <color name="black">#000000</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="red">#FF0000</color>
+    <color name="gray">#9D9D9D</color>
+    <color name="chart_gray">#b4b4b4</color>
+    <color name="orange">#FF7F00</color>
+    <color name="list_item_selected_bg">#ADFF2F</color>
+    <color name="main_bg">#DCDDDD</color>
+    <color name="home_bg">#EEF3F9</color>
+    <color name="title_bg">#0088FF</color>
+    <color name="btn_bg_green">#4da52f</color>
+    <color name="font_color_green">#4da52f</color>
+    <color name="font_color_light_green">#B9E986</color>
+    <color name="font_color_dark_green">#4da52f</color>
+    <color name="font_color_white">#ECEBEE</color>
+    <color name="font_color_blue">#0076FF</color>
+    <color name="font_color_gray_deep">#7A7A7A</color>
+    <color name="font_color_gray">#CACACA</color>
+    <color name="font_color_gray_light">#DFDFDF</color>
+    <color name="font_color_hint">#CACACA</color>
+    <color name="font_color_black">#000000</color>
+    <color name="font_light_black">#232222</color>
+    <color name="font_color_orange">#F19226</color>
+    <color name="font_color_red">#F26631</color>
+    <color name="font_color_pink">#EE828F</color>
+    <color name="seperate_line_color">#ECEBEE</color>
+    <color name="font_color_grape">#B350B6</color>
+    - <!--  home
+  -->
+    <color name="navi_top_line_color">#EBEBEB</color>
+    <color name="navi_font_color">#7A7A7A</color>
+    <color name="navi_font_select_color">#55aa35</color>
+    <color name="home_font_heart_color">#48B969</color>
+    <color name="home_font_blood_color">#4AABD5</color>
+    - <!--       fragment home
+  -->
+    <color name="wave_border_color">#7abf5a</color>
+    <color name="wave_color">#7abf5a</color>
+    <color name="wave_bg_color">#48627c</color>
+    <color name="wave_title_center_color">#ffd03b</color>
+    - <!--       fragment me
+  -->
+    <color name="me_bg_gray">#EFEFF4</color>
+    - <!--       pop window
+  -->
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_red">#FD4A2E</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+    <color name="popup_bg_gray">#EFEFF4</color>
+
+    - <!--  dialog picture start
+  -->
+    <color name="book_log_btn">#F79304</color>
+    <color name="book_view_line">#AAAAAA</color>
+    <color name="albumback">#E1E0DE</color>
+    <color name="btn_red">#E80201</color>
+    <color name="btn_red1">#DC0001</color>
+    <color name="btn_green">#009944</color>
+    <color name="btn_orange">#F5A542</color>
+    <color name="btn_pink">#FF00FF</color>
+    <color name="worldcolor">#333333</color>
+    <color name="background">#f0f0f0</color>
+    <color name="translucenced">#30000000</color>
+    - <!--  半透明
+  -->
+    <color name="kkl_main_color">#E80201</color>
+    <color name="dialog_transparent">#00000000</color>
+    <color name="ECEEED">#ECEEED</color>
+    <color name="F0F1F2">#F0F1F2</color>
+    <color name="c_83E886">#83E886</color>
+    <color name="c_E89095">#E89095</color>
+    <color name="c_4888FF">#4888FF</color>
+    <color name="c_F1F2F3">#F1F2F3</color>
+    - <!--  dialog picture end
+  -->
+
+    - <!--  setting picture start
+  -->
+    <color name="seting_splite_color">#C7C7C9</color>
+    <color name="seting_background">#F1EEF5</color>
+    <color name="updatepassword_background">#EBEBF3</color>
+    - <!--  setting picture end
+  -->
+    <color name="message_text_blue">#1052DC</color>
+    <color name="message_text_gray">#B8B8B8</color>
+    <color name="background_login">#F3F3F3</color>
+
+    <color name="background_defence_on_map">#f1f9ec</color>
+    <color name="background_apply_insu_payout">#efeef4</color>
+    <color name="background_split">#DFDEE6</color>
+    <color name="version_update_blue">#E08EE7</color>
+
+    <!--Message-->
+    <color name="message_lv_background">#efeef4</color>
+    <color name="message_lv_divider">#00000000</color>
+    <color name="message_item_view_background">#efeef4</color>
+    <color name="message_item_msgname_tv">#408ae8</color>
+    <color name="message_item_time_tv">#c3c3c3</color>
+    <color name="message_item_safety_addr">#7b7b7b</color>
+    <color name="message_dialog_textcolor">#bdbdbd</color>
+    <color name="message_dialog_sure">#fc340d</color>
+    <color name="dialog_shape_title_solid">#1075e6</color>
+    <color name="dialog_shape_divider_color">#c8c0c0</color>
+    <!--insurence-->
+    <color name="title_color_blue">#1075e7</color>
+
+</resources>

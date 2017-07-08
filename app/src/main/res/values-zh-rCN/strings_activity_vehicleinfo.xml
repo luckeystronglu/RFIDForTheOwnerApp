@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 标签ID、车牌号码、品牌型号、车辆颜色、车辆图片、购入日期、购入价格、购入地、牌照所在地、使用性质、核载人数 -->
+    <string name="lableId">标签ID</string>
+    <string name="carNum">车牌号码</string>
+    <string name="brandModel">品牌型号</string>
+    <string name="carColors">车辆颜色</string>
+    <string name="carImage">车辆图片</string>
+    <string name="purchaseDate">购入日期</string>
+    <string name="purchasePrice">购入价格</string>
+    <string name="purchaseLocation">购入地</string>
+    <string name="card_battery_status">RFID卡电量状态</string>
+    <string name="licenseLocation">牌照所在地</string>
+    <string name="useProperty">使用性质</string>
+    <string name="loadNuclear">核载人数</string>
+
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 标签ID、车牌号码、品牌型号、车辆颜色、车辆图片、购入日期、购入价格、购入地、牌照所在地、使用性质、核载人数 -->
+    <string name="lableId">Lable Id</string>
+    <string name="carNum">Car Num</string>
+    <string name="brandModel">Brand Model</string>
+    <string name="carColors">Car Colors</string>
+    <string name="carImage">Car Image</string>
+    <string name="purchaseDate">Purchase Date</string>
+    <string name="purchasePrice">Purchase Price</string>
+    <string name="purchaseLocation">Purchase Location</string>
+    <string name="card_battery_status">battery status</string>
+    <string name="licenseLocation">License Location</string>
+    <string name="useProperty">Use Property</string>
+    <string name="loadNuclear">Load Nuclear</string>
+
+</resources>

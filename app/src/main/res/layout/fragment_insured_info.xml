@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/contentGreyBg"
+        android:paddingTop="8dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/activity_vehicleinfo_item_style"
+                android:layout_marginTop="8dp" >
+
+                <TextView
+                    style="@style/activity_vehicleinfo_lable_style"
+                    android:text="@string/lableId" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="5"
+                    android:gravity="left"
+                    android:text="No.0100111"
+                    android:textColor="@color/textBlack"
+                    android:textSize="@dimen/font_size_small" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/activity_vehicleinfo_item_style" >
+
+                <TextView
+                    style="@style/activity_vehicleinfo_lable_style"
+                    android:text="@string/carNum" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="5"
+                    android:gravity="left"
+                    android:text="渝A CB123"
+                    android:textColor="@color/textBlack"
+                    android:textSize="@dimen/font_size_small" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/activity_vehicleinfo_item_style" >
+
+                <TextView
+                    style="@style/activity_vehicleinfo_lable_style"
+                    android:text="@string/carColors" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="5"
+                    android:gravity="left"
+                    android:text="红色车身"
+                    android:textColor="@color/textBlack"
+                    android:textSize="@dimen/font_size_small" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/activity_vehicleinfo_item_style" >
+
+                <TextView
+                    style="@style/activity_vehicleinfo_lable_style"
+                    android:text="@string/carImage" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="5"
+                    android:gravity="left"
+                    android:text="重庆市沙坪坝区西永微电园科园2路南方摩托"
+                    android:textColor="@color/textBlack"
+                    android:textSize="@dimen/font_size_small" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/activity_vehicleinfo_item_style" >
+
+                <TextView
+                    style="@style/activity_vehicleinfo_lable_style"
+                    android:text="@string/purchaseDate" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="5"
+                    android:gravity="left"
+                    android:text="2016/2/30"
+                    android:textColor="@color/textBlack"
+                    android:textSize="@dimen/font_size_small" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/activity_vehicleinfo_item_style" >
+
+                <TextView
+                    style="@style/activity_vehicleinfo_lable_style"
+                    android:text="@string/purchasePrice" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="5"
+                    android:gravity="left"
+                    android:text="￥6380"
+                    android:textColor="@color/textBlack"
+                    android:textSize="@dimen/font_size_small" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/activity_vehicleinfo_item_style" >
+
+                <TextView
+                    style="@style/activity_vehicleinfo_lable_style"
+                    android:text="@string/purchaseLocation" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="5"
+                    android:gravity="left"
+                    android:text="重庆市沙坪坝区西园二路"
+                    android:textColor="@color/textBlack"
+                    android:textSize="@dimen/font_size_small" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/activity_vehicleinfo_item_style" >
+
+                <TextView
+                    style="@style/activity_vehicleinfo_lable_style"
+                    android:text="@string/licenseLocation" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="5"
+                    android:gravity="left"
+                    android:text="重庆市沙坪坝区"
+                    android:textColor="@color/textBlack"
+                    android:textSize="@dimen/font_size_small" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/activity_vehicleinfo_item_style" >
+
+                <TextView
+                    style="@style/activity_vehicleinfo_lable_style"
+                    android:text="@string/useProperty" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="5"
+                    android:gravity="left"
+                    android:text="家用车"
+                    android:textColor="@color/textBlack"
+                    android:textSize="@dimen/font_size_small" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/activity_vehicleinfo_item_style"
+                android:layout_marginBottom="16dp" >
+
+                <TextView
+                    style="@style/activity_vehicleinfo_lable_style"
+                    android:text="@string/loadNuclear" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="5"
+                    android:gravity="left"
+                    android:text="5"
+                    android:textColor="@color/textBlack"
+                    android:textSize="@dimen/font_size_small" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

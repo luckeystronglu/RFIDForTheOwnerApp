@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/seting_background"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/title_layout_style">
+
+        <ImageView
+            android:id="@+id/btn_getmoney_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:paddingLeft="@dimen/distance_width_12"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:src="@drawable/icon_back" />
+
+
+        <TextView
+            android:id="@+id/tv_get_cash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/apply_cash"
+            android:textColor="@color/textWhite"
+            android:textSize="@dimen/font_size_normal" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/distance_height_80"
+        android:background="@color/white"
+        android:divider="@drawable/divider_line_vertical"
+        android:orientation="horizontal"
+        android:showDividers="middle">
+
+        <LinearLayout
+            android:id="@+id/ll_big_place"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+
+            >
+
+            <LinearLayout
+                android:id="@+id/ll_getmoney_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/layout_x_6">
+
+                <ImageView
+                    android:id="@+id/iv_getmoney_place"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ico_xc" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/layout_x_12"
+                    android:text="@string/spotcash"
+                    android:textColor="@color/font_light_black"
+                    android:textSize="@dimen/font_size_large" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_big_tranport"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/ll_getmoney_transport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/layout_x_6">
+
+                <ImageView
+                    android:id="@+id/iv_getmoney_transport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ico_xc" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/layout_x_12"
+                    android:text="@string/personalcash"
+                    android:textColor="@color/font_light_black"
+                    android:textSize="@dimen/font_size_large" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_x_1"
+        android:background="@color/textGray" />
+
+    <LinearLayout
+        android:id="@+id/ll_getmoney_transport_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_y_300"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/distance_height_60"
+            android:layout_marginLeft="@dimen/layout_x_20"
+            android:layout_marginRight="@dimen/layout_x_20"
+            android:layout_marginTop="@dimen/layout_y_16"
+            android:background="@drawable/login_edittext_shape"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/layout_x_100"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/layout_x_20"
+                android:text="@string/name"
+                android:textColor="@color/font_light_black"
+                android:textSize="@dimen/font_size_normal" />
+
+            <View
+                android:layout_width="@dimen/layout_x_1"
+                android:layout_height="@dimen/layout_y_30"
+                android:layout_marginLeft="@dimen/layout_x_10"
+                android:layout_marginRight="@dimen/layout_x_10"
+                android:background="@color/textGray" />
+
+            <EditText
+                android:id="@+id/et_cash_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入您的姓名"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/font_size_normal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/distance_height_60"
+            android:layout_marginLeft="@dimen/layout_x_20"
+            android:layout_marginRight="@dimen/layout_x_20"
+            android:layout_marginTop="@dimen/layout_y_12"
+            android:background="@drawable/login_edittext_shape"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/layout_x_100"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/layout_x_20"
+                android:text="@string/account"
+                android:textColor="@color/font_light_black"
+                android:textSize="@dimen/font_size_normal" />
+
+            <View
+                android:layout_width="@dimen/layout_x_1"
+                android:layout_height="@dimen/layout_y_30"
+                android:layout_marginLeft="@dimen/layout_x_10"
+                android:layout_marginRight="@dimen/layout_x_10"
+                android:background="@color/textGray" />
+
+            <EditText
+                android:id="@+id/et_cash_account"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入银行账号"
+                android:inputType="number"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/font_size_normal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/distance_height_60"
+            android:layout_marginLeft="@dimen/layout_x_20"
+            android:layout_marginRight="@dimen/layout_x_20"
+            android:layout_marginTop="@dimen/layout_y_12"
+            android:background="@drawable/login_edittext_shape"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/layout_x_100"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/layout_x_20"
+                android:text="@string/bank"
+                android:textColor="@color/font_light_black"
+                android:textSize="@dimen/font_size_normal" />
+
+            <View
+                android:layout_width="@dimen/layout_x_1"
+                android:layout_height="@dimen/layout_y_30"
+                android:layout_marginLeft="@dimen/layout_x_10"
+                android:layout_marginRight="@dimen/layout_x_10"
+                android:background="@color/textGray" />
+
+            <EditText
+                android:id="@+id/et_cash_bank"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入开户行"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/font_size_normal" />
+
+        </LinearLayout>
+
+        <!--赔付金额-->
+        <LinearLayout
+            android:id="@+id/ll_payout_amount_num"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/distance_height_60"
+            android:layout_marginLeft="@dimen/layout_x_20"
+            android:layout_marginRight="@dimen/layout_x_20"
+            android:layout_marginTop="@dimen/layout_y_12"
+            android:background="@drawable/login_edittext_shape"
+            android:visibility="gone"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/layout_x_100"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/layout_x_20"
+                android:text="@string/payaccount"
+                android:textColor="@color/font_light_black"
+                android:textSize="@dimen/font_size_small" />
+
+            <View
+                android:layout_width="@dimen/layout_x_1"
+                android:layout_height="@dimen/layout_y_30"
+                android:layout_marginLeft="@dimen/layout_x_10"
+                android:layout_marginRight="@dimen/layout_x_10"
+                android:background="@color/textGray" />
+
+            <TextView
+                android:id="@+id/tv_payout_amount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/font_size_normal" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_getmoney_place_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_y_300"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/layout_y_130"-->
+        <!--android:gravity="center">-->
+        <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@drawable/ico_aw"/>-->
+
+        <!--</LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_y_140"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ico_aw" />
+
+                <LinearLayout
+                    android:id="@+id/ll_payout_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/layout_x_20"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/payaccount"
+                        android:textColor="@color/font_light_black"
+                        android:textSize="@dimen/font_size_normal" />
+
+                    <TextView
+                        android:id="@+id/tv_payout_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/distance_height_6"
+                        android:gravity="center_horizontal"
+                        android:text="￥1300"
+                        android:textColor="@color/actionsheet_blue"
+                        android:textSize="@dimen/font_size_normal" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_getmoney_addr_tint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/distance_height_20"
+            android:layout_marginLeft="@dimen/layout_y_20"
+            android:layout_marginRight="@dimen/layout_y_20"
+            android:gravity="center"
+            android:textColor="@color/textDarkGray"
+            android:textSize="@dimen/font_size_smaller" />
+        <!--android:text='温馨提示:审核通过后,可在提现通知中查看 \"提现金额\" 和 \"提现地址\".'-->
+        <!--android:text="提现地址：广东省深圳市龙岗区星河"-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.4dp"
+            android:layout_marginBottom="@dimen/layout_y_20"
+            android:layout_marginLeft="@dimen/layout_y_20"
+            android:layout_marginRight="@dimen/layout_y_20"
+            android:background="@color/textGray" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_y_20"
+            android:layout_marginRight="@dimen/layout_y_20"
+            android:background="@drawable/updatepw_edittext_shape"
+            android:padding="@dimen/layout_x_16"
+            android:text="注意：请携带个人身份证，保单以及丢失证明前往，如有证件携带不齐全可能会造成不便！"
+            android:textSize="@dimen/font_size_smaller" />
+
+
+        <!--<RelativeLayout-->
+        <!--android:id="@+id/rl_spot_cash"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<ImageView-->
+        <!--android:id="@+id/logo"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="@dimen/layout_y_40"-->
+        <!--android:layout_marginLeft="@dimen/layout_y_130"-->
+        <!--android:src="@drawable/ico_aw"/>-->
+        <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="@dimen/font_size_normal"-->
+        <!--android:layout_toRightOf="@id/logo"-->
+        <!--android:textColor="@color/textBlack"-->
+        <!--android:layout_marginLeft="@dimen/layout_y_20"-->
+        <!--android:layout_marginTop="@dimen/layout_y_60"-->
+        <!--android:text="@string/payaccount"/>-->
+        <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="@dimen/font_size_normal"-->
+        <!--android:layout_toRightOf="@id/logo"-->
+        <!--android:layout_marginLeft="@dimen/layout_y_20"-->
+        <!--android:layout_marginTop="@dimen/layout_y_90"-->
+        <!--android:textColor="@color/actionsheet_blue"-->
+        <!--android:text="￥1300"/>-->
+        <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="@dimen/font_size_small"-->
+        <!--android:gravity="center"-->
+        <!--android:textColor="@color/textDarkGray"-->
+        <!--android:layout_marginLeft="@dimen/layout_y_20"-->
+        <!--android:layout_marginRight="@dimen/layout_y_20"-->
+        <!--android:layout_marginTop="@dimen/layout_y_160"-->
+        <!--android:text="提现地址：广东省深圳市龙岗区星河"/>-->
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/layout_y_1"-->
+        <!--android:layout_marginLeft="@dimen/layout_y_20"-->
+        <!--android:layout_marginRight="@dimen/layout_y_20"-->
+        <!--android:background="@color/textGray"-->
+        <!--android:layout_marginTop="@dimen/layout_y_200"/>-->
+        <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="@dimen/font_size_smaller"-->
+        <!--android:padding="@dimen/layout_x_10"-->
+        <!--android:layout_marginLeft="@dimen/layout_y_20"-->
+        <!--android:layout_marginRight="@dimen/layout_y_20"-->
+        <!--android:layout_marginTop="@dimen/layout_y_220"-->
+        <!--android:background="@drawable/updatepw_edittext_shape"-->
+        <!--android:text="注意：请携带个人身份证，保单以及丢失证明前往，如有证件携带不齐全可能会造成不便！"/>-->
+
+        <!--</RelativeLayout>-->
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_confirm_getMoney"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_img_height_55"
+        android:layout_marginLeft="@dimen/margin_horizontal_large"
+        android:layout_marginRight="@dimen/margin_horizontal_large"
+        android:layout_marginTop="@dimen/distance_height_50"
+        android:background="@drawable/bg_fence_add_btn"
+        android:gravity="center"
+        android:onClick="confirmGetCash"
+        android:text="@string/tv_confirm"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_large" />
+    <!--android:id="@+id/btn_confirm_getmoney"-->
+
+</LinearLayout>

@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/titleLayoutHeight"
+            android:layout_alignParentTop="true"
+            android:background="@color/titleBg">
+
+            <ImageButton
+                android:id="@+id/btn_msg"
+                android:layout_width="@dimen/btn_img_height_small"
+                android:layout_height="@dimen/btn_img_height_small"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/ico_sx"
+                android:scaleType="center" />
+
+            <ImageButton
+                android:id="@+id/btn_setting"
+                android:layout_width="@dimen/btn_img_height_small"
+                android:layout_height="@dimen/btn_img_height_small"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_horizontal_large"
+                android:background="@drawable/icon_setup"
+                android:scaleType="matrix" />
+
+            <LinearLayout
+                android:id="@+id/ll_bike_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/distance_height_2"
+                android:paddingLeft="@dimen/padding_horizontal_large"
+                android:paddingRight="@dimen/padding_horizontal_large"
+                android:paddingTop="@dimen/distance_height_2">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/activity_main_title"
+                    android:textColor="@color/textWhite"
+                    android:textSize="@dimen/font_size_normal" />
+
+                <ImageView
+                    android:id="@+id/btn_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="@dimen/padding_horizontal_normal"
+                    android:src="@drawable/icon_dn"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <!--android:minWidth="@dimen/layout_x_150"-->
+
+    <FrameLayout
+        android:layout_below="@id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/outside_rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/rl_baidu_map"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/ll_container_bottom"
+
+                android:orientation="vertical">
+                <!--baidumap start-->
+                <FrameLayout
+                    android:id="@+id/mainLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true">
+
+                    <com.baidu.mapapi.map.MapView
+                        android:id="@+id/mapview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="true" />
+
+                    <LinearLayout
+                        android:id="@+id/localadress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginLeft="@dimen/layout_x_4"
+                        android:layout_marginRight="@dimen/layout_x_4"
+                        android:layout_marginTop="@dimen/layout_y_4"
+                        android:alpha="0.6"
+                        android:background="@drawable/shape_map_location_ll"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/layout_y_5">
+
+                        <ImageView
+                            android:layout_width="@dimen/btn_img_height_smaller"
+                            android:layout_height="@dimen/btn_img_height_smaller"
+                            android:src="@drawable/location_red_user_point" />
+
+                        <TextView
+                            android:id="@+id/tv_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_horizontal_normal"
+                            android:text=""
+                            android:textColor="@color/textDarkGray"
+                            android:textSize="@dimen/font_size_smaller" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/carInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/layout_y_150"
+
+                        android:layout_gravity="bottom"
+                        android:gravity="bottom"
+                        android:orientation="horizontal">
+                        <!-- android:background="#FFFFFF"-->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/home_row_height_large"
+                            android:layout_weight="1"
+                            android:background="#FFFFFF"
+
+                            android:gravity="center"
+
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_car_num"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="3dp"
+                                android:text=""
+                                android:textSize="@dimen/font_size_normal" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="3dp"
+                                android:text="@string/carNo"
+                                android:textColor="@color/textGray"
+                                android:textSize="@dimen/font_size_small" />
+
+
+                        </LinearLayout>
+                        <!--<View
+                                android:layout_width="1dp"
+                                android:layout_height="80dp"
+                                android:background="#EBEBE1" /> -->
+                        <FrameLayout
+                            android:layout_width="@dimen/layout_y_140"
+                            android:layout_height="@dimen/layout_y_130">
+
+                            <LinearLayout
+                                android:id="@+id/ll_home_center"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="top"
+                                android:background="@drawable/home_round_bg"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/img_circle"
+                                    android:layout_width="@dimen/layout_y_100"
+                                    android:layout_height="@dimen/layout_y_100"
+                                    android:src="@drawable/bikeimage" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/home_row_height_large"
+                                android:layout_gravity="bottom"
+                                android:background="@color/white"></LinearLayout>
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/home_row_height_large"
+                            android:layout_weight="1"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_car_model"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="3dp"
+                                android:text=""
+                                android:textSize="@dimen/font_size_normal" />
+
+                            <TextView
+                                android:id="@+id/textView2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="@string/brandModel"
+                                android:textColor="@color/textGray"
+                                android:textSize="@dimen/font_size_small" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </FrameLayout>
+            </RelativeLayout>
+            <!--baidumap end-->
+
+            <LinearLayout
+                android:id="@+id/ll_container_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:baselineAligned="true"
+
+                android:orientation="vertical">
+
+
+                <!--历史轨迹-->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/split_vertical_normal"
+                    android:background="@color/mainline" />
+
+                <LinearLayout
+                    android:id="@+id/historicalTrack"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/home_row_height"
+                    android:background="#FFFFFF"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_horizontal_large">
+
+                    <View
+                        android:layout_width="@dimen/btn_img_height"
+                        android:layout_height="@dimen/btn_img_height"
+                        android:layout_marginLeft="@dimen/margin_horizontal_normal"
+                        android:background="@drawable/ls" />
+
+                    <LinearLayout
+                        android:id="@+id/historicalTrack1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:gravity="left"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="30dp"
+                            android:text="@string/historicalTrack"
+                            android:textSize="@dimen/font_size_normal" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="@dimen/btn_img_height_smaller"
+                        android:layout_height="@dimen/btn_img_height_smaller"
+                        android:layout_gravity="center"
+                        android:src="@drawable/right" />
+                </LinearLayout>
+                <!--正常使用-->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/split_vertical_normal"
+                    android:background="@color/mainline" />
+
+                <LinearLayout
+
+                    android:id="@+id/ll_bike_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/home_row_height"
+                    android:background="#FFFFFF"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_horizontal_large">
+
+                    <View
+                        android:id="@+id/v_bike_status"
+                        android:layout_width="@dimen/btn_img_height"
+                        android:layout_height="@dimen/btn_img_height"
+                        android:layout_marginLeft="@dimen/margin_horizontal_normal"
+                        android:background="@drawable/zc" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_use_normal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_bike_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="正常使用"
+                            android:textColor="#006400"
+                            android:textSize="@dimen/font_size_normal" />
+
+                        <TextView
+                            android:id="@+id/remain_time_tv"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:visibility="gone"
+                            android:textSize="@dimen/font_size_small" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_bike_status"
+                        android:visibility="visible"
+                        android:layout_width="@dimen/btn_img_height_smaller"
+                        android:layout_height="@dimen/btn_img_height_smaller"
+                        android:layout_gravity="center"
+                        android:src="@drawable/right" />
+                </LinearLayout>
+                <!--我的保险-->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/split_vertical_normal"
+                    android:background="@color/mainline" />
+
+                <LinearLayout
+                    android:id="@+id/my_insurance"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/home_row_height"
+                    android:background="#FFFFFF"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_horizontal_large">
+
+                    <View
+                        android:id="@+id/v_my_insurance"
+                        android:layout_width="@dimen/btn_img_height"
+                        android:layout_height="@dimen/btn_img_height"
+                        android:layout_marginLeft="@dimen/margin_horizontal_normal"
+                        android:background="@drawable/bx" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_insurance"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:gravity="left"
+                        android:orientation="vertical">
+                        <!--android:background="#FFFFFF"-->
+
+                        <TextView
+                            android:id="@+id/tv_insurance_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/my_insurance"
+                            android:textSize="@dimen/font_size_normal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_insurance_content"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:gravity="right"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_insurance_status_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/textGray"
+                            android:textSize="@dimen/font_size_small" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_insurance_status"
+                        android:visibility="visible"
+                        android:layout_width="@dimen/btn_img_height_smaller"
+                        android:layout_height="@dimen/btn_img_height_smaller"
+                        android:layout_gravity="center"
+                        android:src="@drawable/right" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/tv_no_bike"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="#FAFAFA"
+            android:visibility="gone"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="您的账户下暂无车辆"
+                android:textColor="@color/textDarkGray"
+                android:textSize="@dimen/font_size_normal" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+

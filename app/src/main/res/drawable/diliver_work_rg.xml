@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--听书馆-艺术家的diliver分隔线-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <size android:width="0.5dp"
+        android:height="@dimen/divider_height_50"/>
+
+    <solid android:color="@color/dialog_shape_divider_color"/>
+
+</shape>

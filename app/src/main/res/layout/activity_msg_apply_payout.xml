@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--申请索赔的布局文件-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_apply_insu_payout"
+    android:fitsSystemWindows="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            style="@style/title_layout_style">
+
+            <ImageButton
+                android:id="@+id/back_msg_apply_payout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/margin_horizontal_large"
+                android:paddingRight="@dimen/margin_horizontal_large"
+                android:background="@null"
+                android:onClick="onBack"
+                android:scaleType="matrix"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:src="@drawable/icon_back"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/applyInsurancePayout"
+                android:textColor="@color/textWhite"
+                android:textSize="@dimen/font_size_normal"/>
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/apply_payout_fail"
+        />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:padding="12dp"
+                android:text="抱歉, 您的车辆申请索赔审核未通过！"
+                android:textColor="#706c6c"
+                android:textSize="16sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:text="请修改索赔原因以及描述车辆丢失的时间和地点，请点击下方修改按钮重新输入."
+                android:textColor="@color/textDarkGray"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <!--<Button-->
+        <!--android:id="@+id/fix_apply_btn"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/btn_img_height_large"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--android:layout_marginBottom="@dimen/margin_vertical_32"-->
+        <!--android:layout_marginLeft="@dimen/margin_horizontal_large"-->
+        <!--android:layout_marginRight="@dimen/margin_horizontal_large"-->
+        <!--android:background="@drawable/bg_fence_add_btn"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:text="@string/edit_payout_message"-->
+        <!--android:textColor="@color/textWhite"-->
+        <!--android:textSize="@dimen/font_size_normal"/>-->
+</RelativeLayout>

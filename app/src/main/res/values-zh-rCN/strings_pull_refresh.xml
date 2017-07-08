@@ -1,0 +1,10 @@
+<resources>
+
+    <string name="pull_down_refresh">下拉刷新...</string>
+    <string name="release_refresh">放开立即刷新...</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="pull_up_load_more">上拉加载更多...</string>
+    <string name="release_load_more">放开加载更多...</string>
+    <string name="last_page">没有更多了</string>
+    <string name="loading_more">正在加载...</string>
+</resources>

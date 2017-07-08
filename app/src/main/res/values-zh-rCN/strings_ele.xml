@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="ele_fence">电子围栏</string>
+    <string name="ele_add_fence">添加电子围栏</string>
+    <string name="add_safe_area">添加安全区域</string>
+    <string name="save">保存</string>
+    <string name="ele_edit_name">名称</string>
+    <string name="ele_edit_area_radius">区域半径</string>
+    <string name="ele_edit_remind_leaving">离开时提醒</string>
+    <string name="ele_edit_remind_enter">进入时提醒</string>
+    <string name="ele_edit_et_hint">输入需要保存的标题</string>
+    <string name="ele_edit_location_addr">广东省深圳市宝安区五和大道</string>
+    <string name="edit">编辑</string>
+    <string name="meter">米</string>
+    <string name="ele_edit_radius_default">500米</string>
+    <string name="apply_insu_payout_remarks">备注</string>
+    <string name="confirm_payout_apply">确认索赔</string>
+    <string name="edit_payout_message">修改消息</string>
+
+
+</resources>

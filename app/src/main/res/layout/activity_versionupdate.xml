@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/title_layout_style"
+        android:id="@+id/rl_setting">
+
+        <ImageButton
+            android:id="@+id/version_update_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/padding_horizontal_large"
+            android:paddingRight="@dimen/padding_horizontal_large"
+            android:paddingTop="@dimen/btn_padding_default_y"
+            android:paddingBottom="@dimen/btn_padding_default_y"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:background="@null"
+            android:onClick="onVersionUpdateBack"
+            android:scaleType="matrix"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/textWhite"
+            android:text="@string/versionUpdate"
+            android:textSize="@dimen/font_size_normal" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/contentGreyBg">
+
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_y_180"
+        android:background="@color/actionsheet_blue"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_vertical_16"
+            android:src="@drawable/ico_gx"/>
+
+        <LinearLayout
+            android:layout_below="@+id/iv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/layout_y_8"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="【"
+                android:textColor="@color/textWhite"
+                android:textSize="@dimen/font_size_normal"/>
+
+            <TextView
+                android:id="@+id/app_version_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="V1.0.0.5"
+                android:textColor="@color/textWhite"
+                android:textSize="@dimen/font_size_normal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="】新版上线"
+                android:textColor="@color/textWhite"
+                android:textSize="@dimen/font_size_normal"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_y_80"
+            android:layout_below="@id/rl1">
+            <ImageView
+                android:id="@+id/iv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/layout_x_10"
+                android:src="@drawable/left"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv2"
+                android:text="更新信息"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/font_size_normal"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_img_height_large"
+            android:gravity="center"
+            android:layout_below="@id/rl2"
+            android:padding="@dimen/layout_y_8">
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_y_30"
+                android:text="版本名称"
+                android:textSize="@dimen/font_size_normal"/>
+            <TextView
+                android:id="@+id/app_version_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingRight="@dimen/layout_y_30"
+                android:text="V1.0.0.5"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/font_size_normal"/>
+
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_y_1"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/layout_y_30"
+            android:layout_marginRight="@dimen/layout_y_30"
+            android:background="@color/textGray"/>
+        <RelativeLayout
+            android:id="@+id/rl4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_img_height_large"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/layout_y_10"
+            android:padding="@dimen/layout_y_8">
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_y_30"
+                android:text="版本大小"
+                android:textSize="@dimen/font_size_normal"/>
+            <TextView
+                android:id="@+id/app_size_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingRight="@dimen/layout_y_30"
+                android:text="12.3MB"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/font_size_normal"/>
+
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_y_1"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/layout_y_30"
+            android:layout_marginRight="@dimen/layout_y_30"
+            android:background="@color/textGray"/>
+        <RelativeLayout
+            android:id="@+id/rl5"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_img_height_large"
+            android:layout_marginTop="@dimen/layout_y_10"
+            android:gravity="center"
+            android:padding="@dimen/layout_y_8">
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_y_30"
+                android:text="更新时间"
+                android:textSize="@dimen/font_size_normal"/>
+            <TextView
+                android:id="@+id/version_update_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingRight="@dimen/layout_y_30"
+                android:text="2016-12-21"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/font_size_normal"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_y_1"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/layout_y_30"
+            android:layout_marginRight="@dimen/layout_y_30"
+            android:background="@color/textGray"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_img_height_large"
+            android:onClick="onUpdateNow"
+            android:background="@drawable/bg_fence_add_btn"
+            android:layout_marginTop="@dimen/update_pw_btn_distancemgi"
+            android:layout_marginLeft="@dimen/layout_y_30"
+            android:layout_marginRight="@dimen/layout_y_30"
+            android:gravity="center"
+            android:text="立即更新"
+            android:textColor="@color/textWhite"
+            android:textSize="@dimen/font_size_large"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

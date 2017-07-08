@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?><!--申请索赔的布局文件-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_apply_insu_payout"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/title_layout_style">
+
+        <ImageButton
+            android:id="@+id/btn_back_apply_payout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_horizontal_large"
+            android:background="@null"
+            android:onClick="onBack"
+            android:scaleType="matrix"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:id="@+id/tv_apply_payout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/applyInsurancePayout"
+            android:textColor="@color/textWhite"
+            android:textSize="@dimen/font_size_normal" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_defence_height_220">
+
+        <EditText
+            android:id="@+id/et_apply_insu_payout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_vertical_16"
+            android:background="@color/white"
+            android:gravity="left"
+            android:hint="@string/apply_insu_payout_remarks"
+            android:maxLines="5"
+            android:paddingLeft="@dimen/padding_horizontal_36"
+            android:paddingTop="@dimen/padding_horizontal_larger"
+            android:textColorHint="@color/textDarkGray"
+            android:textSize="@dimen/font_size_normal" />
+        <!--android:textColor="@color/textDarkGray"-->
+
+        <ImageView
+            android:layout_width="@dimen/distance_width_20"
+            android:layout_height="@dimen/distance_height_20"
+            android:layout_marginLeft="@dimen/margin_horizontal_large"
+            android:layout_marginTop="@dimen/distance_height_40"
+            android:src="@drawable/ico_bz" />
+
+    </FrameLayout>
+
+
+    <Button
+        android:id="@+id/confirm_apply_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_img_height_55"
+        android:layout_marginLeft="@dimen/padding_horizontal_20"
+        android:layout_marginRight="@dimen/padding_horizontal_20"
+        android:layout_marginTop="@dimen/distance_height_70"
+        android:background="@drawable/bg_fence_add_btn"
+        android:gravity="center"
+        android:text="@string/confirm_payout_apply"
+        android:textColor="@color/textWhite"
+        android:textSize="@dimen/font_size_large" />
+
+    <LinearLayout
+        android:id="@+id/ll_payout_warning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_y_20"
+        android:layout_marginRight="@dimen/layout_y_20"
+        android:layout_marginTop="@dimen/distance_height_30"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_warning"
+            android:drawablePadding="@dimen/layout_y_10"
+            android:text="抱歉, 您的车辆申请索赔审核未通过！"
+            android:textColor="@color/font_color_red"
+            android:textSize="@dimen/font_size_normal"/>
+
+        <TextView
+            android:id="@+id/tv_reject_reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/layout_y_10"
+            android:text=""
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_size_small" />
+    </LinearLayout>
+</LinearLayout>

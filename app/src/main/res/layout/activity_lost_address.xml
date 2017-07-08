@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/title_layout_style">
+
+        <ImageView
+            android:id="@+id/img_addr_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_horizontal_normal"
+            android:background="@null"
+            android:onClick="onBack"
+            android:padding="6dp"
+            android:scaleType="matrix"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:src="@drawable/icon_back" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="丢失地址"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_normal" />
+
+        <ImageView
+            android:id="@+id/img_addr_save"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="@dimen/btn_padding_default_x"
+            android:paddingRight="@dimen/btn_padding_default_x"
+            android:src="@drawable/save66"/>
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/lost_address_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/layout_y_4"
+            android:layout_marginLeft="@dimen/layout_x_4"
+            android:layout_marginRight="@dimen/layout_x_4"
+            android:alpha="0.6"
+            android:background="@drawable/shape_map_location_ll"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/layout_y_5">
+
+            <ImageView
+                android:layout_width="@dimen/padding_vertical_20"
+                android:layout_height="@dimen/padding_vertical_20"
+                android:layout_marginLeft="@dimen/layout_x_40"
+                android:src="@drawable/ico_localtion" />
+
+            <TextView
+                android:id="@+id/current_location_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_x_6"
+                android:textColor="@color/textDarkGray"
+                android:textSize="@dimen/font_size_smaller" />
+            <!--android:text="@string/ele_edit_location_addr"-->
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</LinearLayout>

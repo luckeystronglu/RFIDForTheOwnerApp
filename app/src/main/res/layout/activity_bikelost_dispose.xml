@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/btn_margin_vertical_20"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <!--报失申请-->
+        <LinearLayout
+            android:id="@+id/ll_apply_lost"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/distance_height_40"
+            android:background="@color/blue"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/apply_bikelost" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/distance_height_40"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/arrows_down" />
+        </LinearLayout>
+
+
+        <!--报失审核-->
+        <LinearLayout
+            android:id="@+id/ll_check_lost"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/distance_height_40"
+            android:background="@color/gray"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/check_bikelost" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/distance_height_40"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/arrows_down" />
+        </LinearLayout>
+
+        <!--车辆寻找-->
+        <LinearLayout
+            android:id="@+id/ll_finding_lost"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/distance_height_40"
+            android:background="@color/gray"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/finding_lost_bike" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/distance_height_40"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/arrows_down" />
+        </LinearLayout>
+
+        <!--索赔申请-->
+        <LinearLayout
+            android:id="@+id/ll_apply_payout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/distance_height_40"
+            android:background="@color/gray"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/apply_payout" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/distance_height_40"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/arrows_down" />
+        </LinearLayout>
+
+        <!--索赔审核-->
+        <LinearLayout
+            android:id="@+id/ll_check_payout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/distance_height_40"
+            android:background="@color/gray"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/check_payout" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/distance_height_40"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/arrows_down" />
+        </LinearLayout>
+
+        <!--提现申请-->
+        <LinearLayout
+            android:id="@+id/ll_getmoney_payout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/distance_height_40"
+            android:background="@color/gray"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/apply_cash"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/distance_height_40"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/arrows_down" />
+        </LinearLayout>
+
+        <!--提现处理-->
+        <LinearLayout
+            android:id="@+id/ll_getmoney_dispose"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/distance_height_40"
+            android:background="@color/gray"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dispose_getcash" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/distance_height_40"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/arrows_down" />
+        </LinearLayout>
+
+        <!--结束-->
+        <LinearLayout
+            android:id="@+id/ll_diapose_over"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/distance_height_40"
+            android:background="@color/gray"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lostbike_dispose_over" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+
+</LinearLayout>

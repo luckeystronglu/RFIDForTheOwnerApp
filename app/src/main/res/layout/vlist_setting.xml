@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_row_height"
+        >
+        <ImageView
+            android:id="@+id/img"
+            android:layout_marginLeft="@dimen/seting_margin_horizontal"
+            android:layout_marginRight="@dimen/seting_margin_horizontal"
+            android:layout_marginTop="@dimen/seting_margin_horizontal"
+            android:layout_marginBottom="@dimen/seting_margin_horizontal"
+            android:layout_width="@dimen/btn_img_width_small"
+            android:layout_height="@dimen/btn_img_width_small"
+            android:layout_alignParentLeft="true"
+            android:padding="@dimen/padding_horizontal_normal"
+           />
+
+
+        <TextView
+            android:id="@+id/title"
+            android:padding="@dimen/padding_horizontal_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/img"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/font_size_normal" />
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:padding="@dimen/padding_horizontal_normal"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/img_right"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/font_size_small"/>
+
+        <ImageView
+            android:id="@+id/img_right"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/padding_horizontal_8"
+            android:layout_width="@dimen/btn_img_width_smaller"
+            android:layout_height="@dimen/btn_img_width_smaller"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/btn_margin_horizontal_12" />
+    </RelativeLayout>
+</LinearLayout>

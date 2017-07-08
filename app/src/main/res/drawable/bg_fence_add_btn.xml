@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="false"><shape>
+
+            <!-- 实心 -->
+            <solid android:color="#1175e5" />
+            <!-- 圆角 -->
+            <corners android:radius="5dp" />
+
+            <padding android:bottom="5dp" android:left="8dp" android:right="8dp" android:top="5dp" />
+        </shape></item>
+    <item android:state_pressed="true"><shape>
+
+            <!-- 实心 -->
+            <solid android:color="#1355a0" />
+            <!-- 圆角 -->
+            <corners android:radius="5dp" />
+
+            <padding android:bottom="5dp" android:left="8dp" android:right="8dp" android:top="5dp" />
+        </shape></item>
+    <item android:state_selected="true"><shape>
+
+            <!-- 实心 -->
+            <solid android:color="#cd983b" />
+            <!-- 圆角 -->
+            <corners android:radius="5dp" />
+
+            <padding android:bottom="5dp" android:left="8dp" android:right="8dp" android:top="5dp" />
+        </shape></item>
+    <item android:state_enabled="true"><shape>
+
+            <!-- 实心 -->
+            <solid android:color="#1175e5" />
+            <!-- 圆角 -->
+            <corners android:radius="5dp" />
+
+            <padding android:bottom="5dp" android:left="8dp" android:right="8dp" android:top="5dp" />
+        </shape></item>
+    <item android:state_enabled="false"><shape>
+
+            <!-- 实心 -->
+            <solid android:color="#cfd0d2" />
+            <!-- 圆角 -->
+            <corners android:radius="5dp" />
+
+            <padding android:bottom="5dp" android:left="8dp" android:right="8dp" android:top="5dp" />
+        </shape></item>
+
+</selector>

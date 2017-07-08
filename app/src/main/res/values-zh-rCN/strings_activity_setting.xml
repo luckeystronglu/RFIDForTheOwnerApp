@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="activity_setting_title">设置</string>
+    <string name="car_safe_prep">车辆安防</string>
+    <string name="personalInformation">个人信息</string>
+    <string name="updatePassword">修改密码</string>
+    <string name="versionUpdate">版本更新</string>
+    <string name="update_now">立刻更新</string>
+    <string name="aboutUs">关于我们</string>
+    <string name="personalUserName">姓名</string>
+    <string name="personalCardId">身份证号码</string>
+    <string name="personalPhoneNumber">手机号码</string>
+    <string name="personalAddr">地址</string>
+    <string name="personalEmail">Email</string>
+    <string name="personalWordNum">档案编号</string>
+    <string name="updatePasswordOriginal">请输入您的旧密码</string>
+    <string name="updatePasswordNew">请输入6-12位新密码</string>
+    <string name="updatePasswordConfirm">请再次输入新密码</string>
+    <string name="updatePasswordSure">保存</string>
+    <string name="versionUpdateUpdate">更新</string>
+    <string name="carSafePrep">车辆安防</string>
+    <string name="safeArea">安全区域</string>
+    <string name="electronic_defence">电子围栏</string>
+    <string name="coverRadius">覆盖半径</string>
+    <string name="messageCenter">消息中心</string>
+    <string name="deleteAll">全部删除</string>
+    <string name="applyreport">申请挂失</string>
+    <string name="applycash">申请提现</string>
+    <string name="spotcash">现场提现</string>
+    <string name="personalcash">个人汇款</string>
+    <string name="cardid">身份证</string>
+    <string name="account">帐    号</string>
+    <string name="bank">开户行</string>
+    <string name="sure">确认</string>
+    <string name="payaccount">赔付金额</string>
+
+    <!--保险相关-->
+    <string name="applyInsurancePayout">申请索赔</string>
+
+    <!--消息相关-->
+    <string name="msg_lv_item_time">2016-12-18 09:32</string>
+    <string name="msg_lv_item_content">车辆在12月15日09点23分离开安全区域范围</string>
+    <string name="dialog_delete_all_content">您确定要删除全部内容消息吗？</string>
+    <string name="dialog_cancel">取消</string>
+    <string name="dialog_sure">确定</string>
+    <string name="delete_reminder">删除提示</string>
+    <string name="dialog_delete_one_selected">您确定要删除这条消息吗？</string>
+
+    <string name="dialog_delete_defence_selected">您确定要删除该电子围栏吗？</string>
+
+
+</resources>

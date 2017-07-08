@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/contentBg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_car_info_head"
+        style="@style/title_layout_style"
+        android:layout_alignParentTop="true" >
+
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_horizontal_large"
+            android:onClick="onBack"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:scaleType="matrix"
+            android:background="@drawable/icon_back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/carInfo"
+            android:textColor="@color/textWhite"
+            android:textSize="@dimen/font_size_normal"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"/>
+    </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@color/contentBg"
+            android:layout_below="@+id/rl_car_info_head"
+            android:layout_marginTop="@dimen/layout_y_20"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/activity_vehicleinfo_item_style"
+                >
+
+                <TextView
+                    style="@style/activity_vehicleinfo_lable_style"
+                    android:text="@string/lableId"
+                    android:layout_gravity="bottom"
+                    android:paddingTop="@dimen/margin_horizontal_largest"
+                    android:layout_marginBottom="@dimen/margin_horizontal_normal"/>
+
+                <TextView
+                    android:id="@+id/tv_car_label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_horizontal_large"
+                    android:layout_weight="4"
+                    android:gravity="right"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="@dimen/margin_horizontal_normal"
+                    android:text=""
+                    android:textColor="@color/font_color_blue"
+                    android:textSize="@dimen/font_size_normal" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_y_1"
+                android:layout_marginLeft="@dimen/margin_horizontal_largest"
+                android:layout_marginRight="@dimen/margin_horizontal_largest"
+                android:background="@color/textGray"/>
+            <LinearLayout style="@style/activity_vehicleinfo_item_style" >
+
+                <TextView
+                    style="@style/activity_vehicleinfo_lable_style"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="@dimen/margin_horizontal_normal"
+                    android:paddingTop="@dimen/margin_horizontal_largest"
+                    android:text="@string/carNum" />
+
+                <TextView
+                    android:id="@+id/tv_car_num"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_horizontal_large"
+                    android:layout_weight="4"
+                    android:gravity="right"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="@dimen/margin_horizontal_normal"
+                    android:text=""
+                    android:textColor="@color/font_color_blue"
+                    android:textSize="@dimen/font_size_normal" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_y_1"
+                android:layout_marginLeft="@dimen/margin_horizontal_largest"
+                android:layout_marginRight="@dimen/margin_horizontal_largest"
+                android:background="@color/textGray"/>
+            <LinearLayout style="@style/activity_vehicleinfo_item_style" >
+
+                <TextView
+                    style="@style/activity_vehicleinfo_lable_style"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="@dimen/margin_horizontal_normal"
+                    android:paddingTop="@dimen/margin_horizontal_largest"
+                    android:text="@string/brandModel" />
+
+                <TextView
+                    android:id="@+id/tv_car_model"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_horizontal_large"
+                    android:layout_weight="4"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="@dimen/margin_horizontal_normal"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="@color/font_color_blue"
+                    android:textSize="@dimen/font_size_normal" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_y_1"
+                android:layout_marginLeft="@dimen/margin_horizontal_largest"
+                android:layout_marginRight="@dimen/margin_horizontal_largest"
+                android:background="@color/textGray"/>
+            <LinearLayout style="@style/activity_vehicleinfo_item_style" >
+
+                <TextView
+                    style="@style/activity_vehicleinfo_lable_style"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="@dimen/margin_horizontal_normal"
+                    android:paddingTop="@dimen/margin_horizontal_largest"
+                    android:text="@string/carColors" />
+
+                <TextView
+                    android:id="@+id/tv_car_color"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_horizontal_large"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="@dimen/margin_horizontal_normal"
+                    android:layout_weight="4"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="@color/font_color_blue"
+                    android:textSize="@dimen/font_size_normal" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_y_1"
+                android:layout_marginLeft="@dimen/margin_horizontal_largest"
+                android:layout_marginRight="@dimen/margin_horizontal_largest"
+                android:background="@color/textGray"/>
+            <LinearLayout style="@style/activity_vehicleinfo_item_style" >
+
+                <TextView
+                    style="@style/activity_vehicleinfo_lable_style"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="@dimen/margin_horizontal_normal"
+                    android:paddingTop="@dimen/margin_horizontal_largest"
+                    android:text="@string/purchaseDate" />
+
+                <TextView
+                    android:id="@+id/tv_car_purchase_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_horizontal_large"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="@dimen/margin_horizontal_normal"
+                    android:layout_weight="4"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="@color/font_color_blue"
+                    android:textSize="@dimen/font_size_normal" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_y_1"
+                android:layout_marginLeft="@dimen/margin_horizontal_largest"
+                android:layout_marginRight="@dimen/margin_horizontal_largest"
+                android:background="@color/textGray"/>
+
+            <LinearLayout style="@style/activity_vehicleinfo_item_style" >
+
+                <TextView
+                    style="@style/activity_vehicleinfo_lable_style"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="@dimen/margin_horizontal_normal"
+                    android:paddingTop="@dimen/margin_horizontal_largest"
+                    android:text="@string/purchasePrice" />
+
+                <TextView
+                    android:id="@+id/tv_car_purchase_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_horizontal_large"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="@dimen/margin_horizontal_normal"
+                    android:layout_weight="4"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="@color/font_color_blue"
+                    android:textSize="@dimen/font_size_normal" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_y_1"
+                android:layout_marginLeft="@dimen/margin_horizontal_largest"
+                android:layout_marginRight="@dimen/margin_horizontal_largest"
+                android:background="@color/textGray"/>
+            <LinearLayout style="@style/activity_vehicleinfo_item_style"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    style="@style/activity_vehicleinfo_lable_style"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="@dimen/margin_horizontal_normal"
+                    android:paddingTop="@dimen/margin_horizontal_largest"
+                    android:text="@string/purchaseLocation" />
+
+                <TextView
+                    android:id="@+id/tv_car_purchase_location"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_horizontal_large"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="@dimen/margin_horizontal_normal"
+                    android:layout_weight="4"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="@color/font_color_blue"
+                    android:textSize="@dimen/font_size_normal" />
+            </LinearLayout>
+         <!--   <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_y_1"
+                android:layout_marginLeft="@dimen/margin_horizontal_largest"
+                android:layout_marginRight="@dimen/margin_horizontal_largest"
+                android:background="@color/textGray"/>-->
+            <LinearLayout style="@style/activity_vehicleinfo_item_style"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    style="@style/activity_vehicleinfo_lable_style"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="@dimen/margin_horizontal_normal"
+                    android:paddingTop="@dimen/margin_horizontal_largest"
+                    android:text="@string/licenseLocation" />
+
+                <TextView
+                    android:id="@+id/tv_car_license_location"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_horizontal_large"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="@dimen/margin_horizontal_normal"
+                    android:layout_weight="4"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="@color/font_color_blue"
+                    android:textSize="@dimen/font_size_normal" />
+            </LinearLayout>
+          <!--  <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_y_1"
+                android:layout_marginLeft="@dimen/margin_horizontal_largest"
+                android:layout_marginRight="@dimen/margin_horizontal_largest"
+                android:background="@color/textGray"/>-->
+            <LinearLayout style="@style/activity_vehicleinfo_item_style" >
+
+                <TextView
+                    style="@style/activity_vehicleinfo_lable_style"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="@dimen/margin_horizontal_normal"
+                    android:paddingTop="@dimen/margin_horizontal_largest"
+                    android:text="@string/useProperty" />
+
+                <TextView
+                    android:id="@+id/tv_car_use_property"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_horizontal_large"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="@dimen/margin_horizontal_normal"
+                    android:layout_weight="4"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="@color/font_color_blue"
+                    android:textSize="@dimen/font_size_normal" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_y_1"
+                android:layout_marginLeft="@dimen/margin_horizontal_largest"
+                android:layout_marginRight="@dimen/margin_horizontal_largest"
+                android:background="@color/textGray"/>
+            <LinearLayout
+                style="@style/activity_vehicleinfo_item_style">
+
+                <TextView
+                    style="@style/activity_vehicleinfo_lable_style"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="@dimen/margin_horizontal_normal"
+                    android:paddingTop="@dimen/margin_horizontal_largest"
+                    android:text="@string/loadNuclear" />
+
+                <TextView
+                    android:id="@+id/tv_car_load_num"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_horizontal_large"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="@dimen/margin_horizontal_normal"
+                    android:layout_weight="4"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="@color/font_color_blue"
+                    android:textSize="@dimen/font_size_normal" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_y_1"
+                android:layout_marginLeft="@dimen/margin_horizontal_largest"
+                android:layout_marginRight="@dimen/margin_horizontal_largest"
+                android:background="@color/textGray"/>
+
+            <LinearLayout style="@style/activity_vehicleinfo_item_style"
+                >
+
+                <TextView
+                    style="@style/activity_vehicleinfo_lable_style"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="@dimen/margin_horizontal_normal"
+                    android:paddingTop="@dimen/margin_horizontal_largest"
+                    android:text="@string/card_battery_status" />
+
+                <TextView
+                    android:id="@+id/tv_car_battery_status"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_horizontal_large"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="@dimen/margin_horizontal_normal"
+                    android:layout_weight="4"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="@color/font_color_blue"
+                    android:textSize="@dimen/font_size_normal" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_y_1"
+                android:layout_marginLeft="@dimen/margin_horizontal_largest"
+                android:layout_marginRight="@dimen/margin_horizontal_largest"
+                android:background="@color/textGray"/>
+        </LinearLayout>
+
+</RelativeLayout>
